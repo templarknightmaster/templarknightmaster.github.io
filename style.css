@@ -9,7 +9,7 @@
 }
 
 body {
-	background: gray;
+	background: white;
 }
 
 #container {
@@ -21,6 +21,8 @@ body {
 	font-family: "MediciText";
 	text-align: center;
 	font-size: 60px;
+	color: red;
+	font-weight: normal;
 }
 
 #content img {
