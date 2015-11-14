@@ -6,16 +6,19 @@
 /* LANGUAGES */
 
 #languages {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	left: 0;
+	left: 50%;
+	margin-left: -600px;
 }
 
 #languages a {
+	display: inline-block;
+	width: 120px;
+	text-align: left;
 	color: red;
 	text-decoration: none;
 	font-size: xx-large;
-	margin-left: 50px;
 	line-height: 50px;
 }
 
@@ -36,12 +39,16 @@
 /* SIDEBAR */
 
 #sidebar {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: 10px;
+	right: 50%;
+	margin-right: -675px;
 }
 
 #sidebar a {
+	display: inline-block;
+	width: 175px;
+	text-align: left;
 	color: red;
 	text-decoration: none;
 	font-size: xx-large;
@@ -75,6 +82,10 @@ body {
 	margin: 0 auto;
 }
 
+#content {
+	min-height: 500px;
+}
+
 #content h1 {
 	font-family: "MediciText";
 	text-align: center;
@@ -89,5 +100,9 @@ body {
 
 #content p {
 	font-size: 40px;
+	text-align: center;
+}
+
+footer {
 	text-align: center;
 }
