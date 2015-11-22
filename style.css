@@ -27,12 +27,12 @@
 	position: fixed;
 	top: 0;
 	left: 50%;
-	margin-left: -600px;
+	margin-left: -630px;
 }
 
 #languages a {
 	display: inline-block;
-	width: 120px;
+	width: 150px;
 	text-align: left;
 	color: red;
 	text-decoration: none;
