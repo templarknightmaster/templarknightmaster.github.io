@@ -1,0 +1,241 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+@font-face {
+	font-family: "MediciText";
+	src: url('../fonts/MediciText.ttf');
+}
+
+
+/* ================================================== */
+/* LANGUAGES */
+
+#languages {
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	width: 200px;
+}
+
+#languages a {
+	
+	display: inline-block;
+	text-align: left;
+	color: red;
+	text-decoration: none;
+	font-size: xx-large;
+	
+	height: 65px;
+	line-height: 60px;
+	
+	position: relative;
+}
+
+#languages a span:last-child {
+	display: none;
+}
+
+#languages a:hover span:first-child {
+	display: none;
+
+}
+
+#languages a:hover span:last-child {
+	display: inline-block;
+
+}
+
+
+
+/* ================================================== */
+/* SIDEBAR */
+
+#sidebar 
+{
+	position: fixed;
+	top: 25px;
+	right: 15px;
+}
+
+#sidebar a 
+{
+	display: inline-block;
+	text-align: left;
+	color: red;
+	text-decoration: none;
+	font-size: 1.7rem;
+	line-height: 50px;
+}
+
+#sidebar img 
+{
+	width: 50px;
+	height: 50px;
+}
+
+/* ================================================== */
+/* GENERAL */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	font-size: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+.container960
+{
+	max-width: 960px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+	clear: both;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.h1-style1 {
+	font-family: "MediciText";
+	text-align: center;
+	font-size: 60px;
+	color: red;
+	font-weight: normal;
+}
+
+
+#site-container > header
+{
+	margin-bottom: 15px;
+}
+
+#site-container > header > h1
+{
+	margin-bottom: 50px;
+}
+
+
+/* ================================================== */
+/* HOME PAGE */
+
+#home-banner
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#body-home 
+{
+	min-height: 500px;
+}
+
+#body-home > img 
+{
+	width: 100%;
+}
+
+#body-home > h2 
+{
+	font-size: 35px;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+
+#body-home > p 
+{
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 40px;
+	text-align: justify;
+	/*text-indent: 25px;*/
+}
+
+
+
+/* ================================================== */
+/* GALLERY PAGE */
+
+
+#body-gallery > ul > li 
+{
+	width: 100%;
+	min-height: 300px;
+	box-sizing: border-box;
+}
+
+#body-gallery > ul > li > img 
+{
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+#body-gallery > ul > li:nth-child(even) > img
+{
+	float: right;
+}
+
+#body-gallery > ul > li > div 
+{
+	width: 710px;
+	float: left;
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+
+#body-gallery > ul > li > div > h2 
+{
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 22px;
+	color: blue;
+}
+
+#body-gallery > ul > li > div > p 
+{
+	text-align: justify;
+}
+
+
+
+/* ================================================== */
+/* EVENTS PAGE */
+
+
+#body-events > ul > li > img
+{
+	width: 500px;
+	float: left;
+}
+
+#body-events > ul > li > div
+{
+	float: left;
+	width: 460px;
+}
+
+#body-events > ul > li > div > h2
+{
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 27px;
+	color: blue;
+}
