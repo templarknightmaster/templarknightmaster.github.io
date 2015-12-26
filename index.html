@@ -5,6 +5,7 @@
 		<title>Templar Knights</title>
 		
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
 		<meta name="description" content="Order of the Templar Knights">
 		<meta name="keywords" content="Templar Knights, TemplarKnights, KnightsTemplar, Knights Templar, The Order of the World Templar Lords, Order of the World Templar Lords, Tempelritter, Tempel Ritter" >
 		
@@ -13,13 +14,17 @@
 		
 	</head>
 	<body>
+		
+		
 		<!--- SITE CONTAINER --->
 		<div id="site-container">
 			
+		
 			<div id="languages">
+				
 				<ul>
 					<li>
-						<a href="#body-home">
+						<a href="#body">
 							<span>
 								<img src="images/flags/flag-denmark.gif" alt="Denmark Flag" title="Denmark Flag">
 							</span>
@@ -27,7 +32,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#body-home">
+						<a href="#body">
 							<span>
 								<img src="images/flags/flag-philippines.gif" alt="Philippines Flag" title="Philippines Flag">
 							</span>
@@ -35,15 +40,15 @@
 						</a>
 					</li>
 					<li>
-						<a href="#body-home">
+						<a href="#body">
 							<span>
 								<img src="images/flags/flag-france.gif" alt="France Flag" title="France Flag">
 							</span>
-							<span>Française</span>
+							<span onclick="showFrançaise()">Française</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body-home">
+						<a href="#body">
 							<span>
 								<img src="images/flags/flag-germany.gif" alt="Germany Flag" title="Germany Flag">
 							</span>
@@ -51,22 +56,77 @@
 						</a>
 					</li>
 					<li>
-						<a href="#body-home">
+						<a href="#body">
 							<span>Others</span>
 							<span>Soon..</span>
 						</a>
 					</li>
 				</ul>
+				
 			</div>
+			
+			
 			
 			<div id="sidebar">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" title="tempelritter@yahoo.com.au" href="tempelritter@yahoo.com.au">Contact Us</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="">History</a></li>
-					<li><a href="">Membership</a></li>
+					<li>
+						<a href="index.html">
+							<span class="language-english languages show">Home</span>
+							<span class="language-danish languages hide">Hjemmeside</span>
+							<span class="language-filipino languages hide">Home</span>
+							<span class="language-française languages hide">Page d'accueil</span>
+							<span class="language-german languages hide">Startseite</span>
+						</a>
+					</li>
+						
+					<li>
+						<a target="_blank" title="tempelritter@yahoo.com.au" href="mailto:tempelritter@yahoo.com.au">
+							<span class="language-english languages show">Contact Us</span>
+							<span class="language-danish languages hide">Kontakt os</span>
+							<span class="language-filipino languages hide">Contact Us</span>
+							<span class="language-française languages hide">Contactez nous</span>
+							<span class="language-german languages hide">Kontakt</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="events.html">
+							<span class="language-english languages show">Events</span>
+							<span class="language-danish languages hide">Tilfælde</span>
+							<span class="language-filipino languages hide">Events</span>
+							<span class="language-française languages hide">Événement</span>
+							<span class="language-german languages hide">Ereignisse</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="gallery.html">
+							<span class="language-english languages show">Gallery</span>
+							<span class="language-danish languages hide">Galleri</span>
+							<span class="language-filipino languages hide">Galeriya</span>
+							<span class="language-française languages hide">Galerie</span>
+							<span class="language-german languages hide">Galerie</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="language-english languages show">History</span>
+							<span class="language-danish languages hide">Historie</span>
+							<span class="language-filipino languages hide">Kasaysayan</span>
+							<span class="language-française languages hide">Histoire</span>
+							<span class="language-german languages hide">Vergangenheit</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<span class="language-english languages show">Membership</span>
+							<span class="language-danish languages hide">Medlemskab</span>
+							<span class="language-filipino languages hide">Membership</span>
+							<span class="language-française languages hide">Adhésion</span>
+							<span class="language-german languages hide">Mitgliedschaft</span>
+						</a>
+					</li>
 					<li>
 						<a target="_blank" href="https://www.facebook.com/Order-of-the-World-Templar-Knights-Der-Welt-Tempelherren-Orden-1465017220440357">
 							<img src="images/fb-icon.png" alt="Facebook Icon">
@@ -75,151 +135,173 @@
 				</ul>
 			</div>
 			
+			
+			
 			<!--- HEADER --->
-			<header class="container960">
-				<img id="home-banner" src="images/banner.jpg" alt="Banner">
-			</header>
+			<div id="header" class="container960">
+				<img id="banner-home" src="images/banner-home.jpg" alt="Home of the Templar Knights" title="Home of the Templar Knights">
+			</div>
+	
+	
 	
 			<!--- BODY --->
-			<div id="body-home" class="container960">
+			<div id="body" class="container960">
 				
-				<h1 class="h1-style1">Order of the World Templar Lords</h1>
 				
-				<h2>
-					Non nobis, Domine, non nobis, sed nomini Tuo da gloriam
-				</h2>
 				
-				<p id="english">
+				<div id="body-content-home">
+				
+					<h1 class="h1-style1">Order of the World Templar Lords</h1>
 					
-					Interested in History, interested in the ‘good old times’, don’t want to forget the medieval live and customs?
-					Confused about Knighthood, want to know more about Knights and especially Templar Knights? Is your urge strong enough to learn more about the Order of the Knights of the Temple? You might be at the right website.
-						
-					<br>
-					<br>
+					<h2>
+						Non nobis, Domine, non nobis, sed nomini Tuo da gloriam
+					</h2>
 					
-					There are many Templar Knight groups in this world, some are huge Organisations…spread all over the globe with 100th if not 1000th of members, like the OSMTH. If you live in Europe or the USA, they are the best starting point to change your life from a peasant to a knight. Go on – contact them, show your interest and one day you will be invited and begin a life which is very much different to all other people out there.
+					<p class="language-english languages show">
 						
-					<br>
-					<br>
-				
-					Some others are just a group of friends, who dress up and follow the ideals of a brotherhood. Some take as member’s only men, some others also women; some keep their membership at a high level of education. Members must have a University degree and preferable a job as a leader of companies or military personnel. Again others are re-enactment groups which dresses up and parades around on town fairs.
+						Interested in History, interested in the ‘good old times’, don’t want to forget the medieval live and customs?
+						Confused about Knighthood, want to know more about Knights and especially Templar Knights? Is your urge strong enough to learn more about the Order of the Knights of the Temple? You might be at the right website.
 							
-					<br>
-					<br>
-
-					We  -  the Lords of the Templar Knights  -  keep it simple, we are a place where everyone is welcome. We evolved into a non-religious Order and as we reside in Australia – we are multicultural – meaning we make no difference between colour, language or culture of a person.
+						<br>
+						<br>
+						
+						There are many Templar Knight groups in this world, some are huge Organisations…spread all over the globe with 100th if not 1000th of members, like the OSMTH. If you live in Europe or the USA, they are the best starting point to change your life from a peasant to a knight. Go on – contact them, show your interest and one day you will be invited and begin a life which is very much different to all other people out there.
+							
+						<br>
+						<br>
 					
-					<br>
-					<br>
+						Some others are just a group of friends, who dress up and follow the ideals of a brotherhood. Some take as member’s only men, some others also women; some keep their membership at a high level of education. Members must have a University degree and preferable a job as a leader of companies or military personnel. Again others are re-enactment groups which dresses up and parades around on town fairs.
+								
+						<br>
+						<br>
+	
+						We  -  the Lords of the Templar Knights  -  keep it simple, we are a place where everyone is welcome. We evolved into a non-religious Order and as we reside in Australia – we are multicultural – meaning we make no difference between colour, language or culture of a person.
+						
+						<br>
+						<br>
+						
+						As most of us are ‘middle class’ citizens – we talk with a plain language, we don’t have sophisticated conversations, where people try to outsmart each other, we have no secrets from each other and we have a democratic voting system, using black and white marbles.  
+					</p>
 					
-					As most of us are ‘middle class’ citizens – we talk with a plain language, we don’t have sophisticated conversations, where people try to outsmart each other, we have no secrets from each other and we have a democratic voting system, using black and white marbles.  
-				</p>
-				
-				<p id="danish" class="hide">
-					Interesseret i historie, interesseret i de "gode gamle dage", du gide ikke glemme
-					det middelalderlige liv og deres brug? Forvirret om ridderlighed? Vil du vide 
-					mere om riddere og specifikt om Tempelridderne? Er dit ønske stærk nok til at 
-					finde ud af mere om denne Temple ridder? Du kunne har nået frem til den 
-					rigtige hjemmeside.
-					<br>
-					<br>
-					Der er mange Templar grupper i verden. Nogle er store organisationer spredt 
-					over hele kloden , med hundreder hvis ikke tusinder af medlemmer såsom 
-					OSMTH. Hvis du bor i Europa eller USA denne Order er et godt udgangspunkt 
-					hvore dit liv fra en almindelig borger – kunne skifte til en ridder. Prøve det -  
-					kontakt en af dem.
-					<br>
-					<br>
-					Vis din interesse til dem og en dag du ville bleve invitered og dit liv vil være
-					forskellig fra de mennesker ”derude ". Andre grupper er for det meste bare en 
-					flok venner , som bærer en Templar kappe og opfølger - mere eller mindre – en  
-					broderskab.
-					<br>
-					<br>
-					Nogle accepterer som medlemmer kun mænd , andre velkommer gerne også
-					kvinder. Andre foretrækker at deres medlemmer en høj uddannelse – være 
-					ønskeligt i besiddelse af en universitetsgrad og en ledende stilling i 
-					virksomheden eller i den militære. Der er også grupper hvis har intet til fælles 
-					med en Order, de er kun organisationer, deres medlemmer bærer 
-					middelalderlig dragt og underholde folk på messer.
-					<br>
-					<br>
-					Vi – Order of the Knights Templar Lords - holde det enkelt , er vi et sted, hvor 
-					alle er velkomne . Vi udviklede en ikke-religiøse order og fordi vi er hjemme i 
-					Australien - vi er multikultural , det mener vi skelner ikke mellem farve, sprog 
-					eller kultur af en person.
-					<br>
-					<br>
-					Da de fleste af os er såkaldte ’middelklasse' medlemmer - vi taler ikke i en 
-					kunstig sprog, hvor mange mennesker forsøger at snyde hinanden. Vi har ingen 
-					hemmeligheder , og vi har et demokratisk valgsystem ; hvor vi bruger hvide og 
-					sorte kugler.
-				</p>
-				
-				<p id="filipino" class="hide">
-					Interesado sa History? Interesado sa lumang panahon? At ayaw makalimutan ang medieval na paraan ng pamumuhay at kultura? Nalilito tungkol sa Knighthood? Gustong malaman ang tungkol sa Knights at lalo na ang Templar Knights? Gusto mong malaman at matutunan ang Order of the Knights Templar? Ikaw ay nasa tamang website.
-					<br>
-					<br>
-					Maraming grupo ang Templar Knight dito sa mundo, ang ilan ay malaking samahan.. nakakalat sa buong mundo na may 100 kung hindi 1000 na miyembro tulad ng OSMTH.
-					kung nakatira ka sa Europa o sa USA, sila ang magandang umpisa sa pagbabago ng buhay bilang isang karaniwang tao para maging knight. Sige humayo ka - kontakin mo sila at ipakita ang iyong interest at isang araw ikaw ay maiimbitahan at map-umpisa sa buhay na naiiba sa pangkaraniwang tao.
-					<br>
-					<br>
-					Ang ilan ay grupo lang ng magkakaibigan na nag dadamit at sumusunod sa ideya ng kapatiran. Ang ibang samahan ay tanging mga kalalakihan lamang at merong samahan meron ding mga kababaihan. Ang iba ay pinapanatili ang mga miyembro na may mataas na pinag-aralan o may mataas na katungkulan sa lipunan.
-					<br>
-					<br>
-					Kami - The Lords of the Templar Knights - pinatiling simple, kami ay tahanan kung saan lahat ay tanggap. kami ay naging Non-Religious Order at dahil kami ay nasa Australia - kami ay multicultural - ibig sabihin walang kaming pinagkaiba sa kulay, lengguwahe o kultura ng tao.
-					<br>
-					<br>
-					Karamihan sa amin ay 'middle class' citizen - at sa aming pagtitipon tipon ay normal na usapang pamumuhay na parang isang pamilya, walang sekreto open conversations at pantay pantay ang bawat isa. At higit sa lahat mayroon kaming demokrasya sa paraan ng pagboboto at gamit ang itim at puting marble.
-				</p>
-				
-				<p id="german" class="hide">
-					Interessiert in Geschichte, interessiert in der „Guten Alten Zeit“, du willst das 
-					mittelalterliche Leben und deren Bräuche nicht vergessen? Verwirrt über 
-					Rittertum, willst du mehr über Ritter und speziell über Tempel  Ritter wissen? 
-					Ist dein Verlangen stark genug um mehr über den Orden der Ritter des 
-					Tempels zu erfahren? Du könntest an der richtigen website angelangt sein.
-					<br>
-					<br>
-					Es gibt viele Templar Gruppen in der Welt, manche sind große
-					Organisationen...verteilt über den ganzen Erdball, mit hunderten wenn nicht 
-					tausenden Mitgliedern; wie zB OSMTH. Wenn du in Europa oder den USA 
-					wohnst, dieser Orden ist ein ein guter Anfangspunkt dein Leben von einem 
-					gewöhnlichen Bürger – zu einem Ritter zu ändern. Wage es – stell einen 
-					Kontakt mit einem vom ihnen her, zeig dein Interesse und eines Tages wird 
-					man dich einladen und dein Leben wird anders sein als von den Menschen ‚da 
-					draussen‘.
-					<br>
-					<br>
-					Andere Gruppen sind meistens nur eine Ansammlung von Freunden, welche 
-					einen Templar Mantel tragen und mehr oder weniger den Idealen einer 
-					Bruderschaft folgen. Manche nehmen als Mitglieder nur Männer, andere 
-					heissen auch Frauen willkommen. Andere bevorzugen, daß ihre Mitglieder eine 
-					hohe Ausbildung - wünschenwerterweise einen Universitäts Abschluss besitzen 
-					und eine leitende Position in Firmen oder im Militär innehaben. Es gibt auch 
-					Gruppen die mit einem Orden nichts gemein haben, sie sind lediglich 
-					Organisationen deren Mitglieder mittelalterliches Gewand tragen und bei 
-					Jahrmärkten das Volk unterhalten.
-					<br>
-					<br>
-					Wir  -  Die Tempelherren  -  halten es einfach, wir sind ein Platz in dem jeder 
-					willkommen ist. Wir entwickelten uns zu einem nicht religiösen Orden und da 
-					wir in Australien zuhause sind – sind wir multikultural, das heist wir machen 
-					keinen Unterschied zwischen Farbe, Sprache oder Kultur einer Person.
-					<br>
-					<br>
-					Da die meisten von uns der sogenannten ‚Mittel Klasse’ angehören –
-					unterhalten wir uns nicht in einer gekünstelten Sprache, in welcher viele 
-					Menschen versuchen sich gegenseitig auszutricksen. Wir haben keine 
-					Geheimnisse voreinander und wir haben ein demokratisches Wahlsystem; in 
-					dem wir weisse und schwarze Murmeln verwenden.
-				</p>
+					
+					<p class="language-danish languages hide">
+						Interesseret i historie, interesseret i de "gode gamle dage", du gide ikke glemme
+						det middelalderlige liv og deres brug? Forvirret om ridderlighed? Vil du vide 
+						mere om riddere og specifikt om Tempelridderne? Er dit ønske stærk nok til at 
+						finde ud af mere om denne Temple ridder? Du kunne har nået frem til den 
+						rigtige hjemmeside.
+						<br>
+						<br>
+						Der er mange Templar grupper i verden. Nogle er store organisationer spredt 
+						over hele kloden , med hundreder hvis ikke tusinder af medlemmer såsom 
+						OSMTH. Hvis du bor i Europa eller USA denne Order er et godt udgangspunkt 
+						hvore dit liv fra en almindelig borger – kunne skifte til en ridder. Prøve det -  
+						kontakt en af dem.
+						<br>
+						<br>
+						Vis din interesse til dem og en dag du ville bleve invitered og dit liv vil være
+						forskellig fra de mennesker ”derude ". Andre grupper er for det meste bare en 
+						flok venner , som bærer en Templar kappe og opfølger - mere eller mindre – en  
+						broderskab.
+						<br>
+						<br>
+						Nogle accepterer som medlemmer kun mænd , andre velkommer gerne også
+						kvinder. Andre foretrækker at deres medlemmer en høj uddannelse – være 
+						ønskeligt i besiddelse af en universitetsgrad og en ledende stilling i 
+						virksomheden eller i den militære. Der er også grupper hvis har intet til fælles 
+						med en Order, de er kun organisationer, deres medlemmer bærer 
+						middelalderlig dragt og underholde folk på messer.
+						<br>
+						<br>
+						Vi – Order of the Knights Templar Lords - holde det enkelt , er vi et sted, hvor 
+						alle er velkomne . Vi udviklede en ikke-religiøse order og fordi vi er hjemme i 
+						Australien - vi er multikultural , det mener vi skelner ikke mellem farve, sprog 
+						eller kultur af en person.
+						<br>
+						<br>
+						Da de fleste af os er såkaldte ’middelklasse' medlemmer - vi taler ikke i en 
+						kunstig sprog, hvor mange mennesker forsøger at snyde hinanden. Vi har ingen 
+						hemmeligheder , og vi har et demokratisk valgsystem ; hvor vi bruger hvide og 
+						sorte kugler.
+					</p>
+					
+					
+					<p class="language-filipino languages hide">
+						Interesado sa History? Interesado sa lumang panahon? At ayaw makalimutan ang medieval na paraan ng pamumuhay at kultura? Nalilito tungkol sa Knighthood? Gustong malaman ang tungkol sa Knights at lalo na ang Templar Knights? Gusto mong malaman at matutunan ang Order of the Knights Templar? Ikaw ay nasa tamang website.
+						<br>
+						<br>
+						Maraming grupo ang Templar Knight dito sa mundo, ang ilan ay malaking samahan.. nakakalat sa buong mundo na may 100 kung hindi 1000 na miyembro tulad ng OSMTH.
+						kung nakatira ka sa Europa o sa USA, sila ang magandang umpisa sa pagbabago ng buhay bilang isang karaniwang tao para maging knight. Sige humayo ka - kontakin mo sila at ipakita ang iyong interest at isang araw ikaw ay maiimbitahan at map-umpisa sa buhay na naiiba sa pangkaraniwang tao.
+						<br>
+						<br>
+						Ang ilan ay grupo lang ng magkakaibigan na nag dadamit at sumusunod sa ideya ng kapatiran. Ang ibang samahan ay tanging mga kalalakihan lamang at merong samahan meron ding mga kababaihan. Ang iba ay pinapanatili ang mga miyembro na may mataas na pinag-aralan o may mataas na katungkulan sa lipunan.
+						<br>
+						<br>
+						Kami - The Lords of the Templar Knights - pinatiling simple, kami ay tahanan kung saan lahat ay tanggap. kami ay naging Non-Religious Order at dahil kami ay nasa Australia - kami ay multicultural - ibig sabihin walang kaming pinagkaiba sa kulay, lengguwahe o kultura ng tao.
+						<br>
+						<br>
+						Karamihan sa amin ay 'middle class' citizen - at sa aming pagtitipon tipon ay normal na usapang pamumuhay na parang isang pamilya, walang sekreto open conversations at pantay pantay ang bawat isa. At higit sa lahat mayroon kaming demokrasya sa paraan ng pagboboto at gamit ang itim at puting marble.
+					</p>
+					
+					<p class="language-française languages hide">
+						à venir
+					</p>
+					
+					
+					<p class="language-german languages hide">
+						Interessiert in Geschichte, interessiert in der „Guten Alten Zeit“, du willst das 
+						mittelalterliche Leben und deren Bräuche nicht vergessen? Verwirrt über 
+						Rittertum, willst du mehr über Ritter und speziell über Tempel  Ritter wissen? 
+						Ist dein Verlangen stark genug um mehr über den Orden der Ritter des 
+						Tempels zu erfahren? Du könntest an der richtigen website angelangt sein.
+						<br>
+						<br>
+						Es gibt viele Templar Gruppen in der Welt, manche sind große
+						Organisationen...verteilt über den ganzen Erdball, mit hunderten wenn nicht 
+						tausenden Mitgliedern; wie zB OSMTH. Wenn du in Europa oder den USA 
+						wohnst, dieser Orden ist ein ein guter Anfangspunkt dein Leben von einem 
+						gewöhnlichen Bürger – zu einem Ritter zu ändern. Wage es – stell einen 
+						Kontakt mit einem vom ihnen her, zeig dein Interesse und eines Tages wird 
+						man dich einladen und dein Leben wird anders sein als von den Menschen ‚da 
+						draussen‘.
+						<br>
+						<br>
+						Andere Gruppen sind meistens nur eine Ansammlung von Freunden, welche 
+						einen Templar Mantel tragen und mehr oder weniger den Idealen einer 
+						Bruderschaft folgen. Manche nehmen als Mitglieder nur Männer, andere 
+						heissen auch Frauen willkommen. Andere bevorzugen, daß ihre Mitglieder eine 
+						hohe Ausbildung - wünschenwerterweise einen Universitäts Abschluss besitzen 
+						und eine leitende Position in Firmen oder im Militär innehaben. Es gibt auch 
+						Gruppen die mit einem Orden nichts gemein haben, sie sind lediglich 
+						Organisationen deren Mitglieder mittelalterliches Gewand tragen und bei 
+						Jahrmärkten das Volk unterhalten.
+						<br>
+						<br>
+						Wir  -  Die Tempelherren  -  halten es einfach, wir sind ein Platz in dem jeder 
+						willkommen ist. Wir entwickelten uns zu einem nicht religiösen Orden und da 
+						wir in Australien zuhause sind – sind wir multikultural, das heist wir machen 
+						keinen Unterschied zwischen Farbe, Sprache oder Kultur einer Person.
+						<br>
+						<br>
+						Da die meisten von uns der sogenannten ‚Mittel Klasse’ angehören –
+						unterhalten wir uns nicht in einer gekünstelten Sprache, in welcher viele 
+						Menschen versuchen sich gegenseitig auszutricksen. Wir haben keine 
+						Geheimnisse voreinander und wir haben ein demokratisches Wahlsystem; in 
+						dem wir weisse und schwarze Murmeln verwenden.
+					</p>
+					
+				</div>
 				
 			</div>
+			
+			
+			
 			<!--- FOOTER --->
-			<footer>
+			<div id="footer">
 				<a href="http://info.flagcounter.com/qZBj"><img src="http://s01.flagcounter.com/count/qZBj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-			</footer>
+			</div>
+			
+			
 		</div>
 		<!--- END SITE CONTAINER --->
 		
@@ -228,51 +310,7 @@
 		
 		
 		<!--- JAVASCRIPTS --->
-		<script>
-			
-			function hideLanguages() {
-				
-				var allLanguage = document.querySelectorAll('#body-home > p');
-	
-				for ( i = 0 ; i < allLanguage.length ; i++)
-				{
-					allLanguage[i].classList.remove('show');
-					allLanguage[i].classList.add('hide');
-				}
-			}
-			
-			function showLanguage(language) {
-				
-				language.classList.add('show');
-			}
-			
-			function showFilipino()
-			{
-				hideLanguages();
-				
-				var filipino = document.querySelector('p#filipino');
-				
-				showLanguage(filipino);
-			}
-			
-			function showDanish() {
-				
-				hideLanguages();
-				
-				var danish = document.querySelector('p#danish');
-				
-				showLanguage(danish);
-			}
-			
-			function showGerman() {
-				
-				hideLanguages();
-				
-				var german = document.querySelector('p#german');
-				
-				showLanguage(german);
-			}
+		<script src="scripts/main.js"></script>
 
-		</script>
 	</body>
 </html>

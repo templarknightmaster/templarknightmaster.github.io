@@ -5,6 +5,7 @@
 		<title> Templar Knights - Events </title>
 		
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
 		
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="stylesheet" href="css/main.css">
@@ -12,13 +13,16 @@
 	</head>
 	<body>
 
+
 		<!--- SITE CONTAINER --->
 		<div id="site-container">
 			
+			
 			<div id="languages">
+				
 				<ul>
 					<li>
-						<a href="#content">
+						<a>
 							<span>
 								<img src="images/flags/flag-denmark.gif" alt="Denmark Flag" title="Denmark Flag">
 							</span>
@@ -26,7 +30,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#content">
+						<a>
 							<span>
 								<img src="images/flags/flag-philippines.gif" alt="Philippines Flag" title="Philippines Flag">
 							</span>
@@ -34,15 +38,15 @@
 						</a>
 					</li>
 					<li>
-						<a href="#content">
+						<a>
 							<span>
 								<img src="images/flags/flag-france.gif" alt="France Flag" title="France Flag">
 							</span>
-							<span>Française</span>
+							<span onclick="showFrançaise()">Française</span>
 						</a>
 					</li>
 					<li>
-						<a href="#content">
+						<a>
 							<span>
 								<img src="images/flags/flag-germany.gif" alt="Germany Flag" title="Germany Flag">
 							</span>
@@ -50,24 +54,77 @@
 						</a>
 					</li>
 					<li>
-						<a href="#content">
+						<a>
 							<span>Others</span>
 							<span>Soon..</span>
 						</a>
 					</li>
 				</ul>
+				
 			</div>
 			
 			
 			
 			<div id="sidebar">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a target="_blank" title="tempelritter@yahoo.com.au" href="tempelritter@yahoo.com.au">Contact Us</a></li>
-					<li><a href="events.html">Events</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="">History</a></li>
-					<li><a href="">Membership</a></li>
+					<li>
+						<a href="index.html">
+							<span class="language-english languages show">Home</span>
+							<span class="language-danish languages hide">Hjemmeside</span>
+							<span class="language-filipino languages hide">Home</span>
+							<span class="language-française languages hide">Page d'accueil</span>
+							<span class="language-german languages hide">Startseite</span>
+						</a>
+					</li>
+						
+					<li>
+						<a target="_blank" title="tempelritter@yahoo.com.au" href="mailto:tempelritter@yahoo.com.au">
+							<span class="language-english languages show">Contact Us</span>
+							<span class="language-danish languages hide">Kontakt os</span>
+							<span class="language-filipino languages hide">Contact Us</span>
+							<span class="language-française languages hide">Contactez nous</span>
+							<span class="language-german languages hide">Kontakt</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="events.html">
+							<span class="language-english languages show">Events</span>
+							<span class="language-danish languages hide">Tilfælde</span>
+							<span class="language-filipino languages hide">Events</span>
+							<span class="language-française languages hide">Événement</span>
+							<span class="language-german languages hide">Ereignisse</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="gallery.html">
+							<span class="language-english languages show">Gallery</span>
+							<span class="language-danish languages hide">Galleri</span>
+							<span class="language-filipino languages hide">Galeriya</span>
+							<span class="language-française languages hide">Galerie</span>
+							<span class="language-german languages hide">Galerie</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="language-english languages show">History</span>
+							<span class="language-danish languages hide">Historie</span>
+							<span class="language-filipino languages hide">Kasaysayan</span>
+							<span class="language-française languages hide">Histoire</span>
+							<span class="language-german languages hide">Vergangenheit</span>
+						</a>
+					</li>
+					
+					<li>
+						<a href="">
+							<span class="language-english languages show">Membership</span>
+							<span class="language-danish languages hide">Medlemskab</span>
+							<span class="language-filipino languages hide">Membership</span>
+							<span class="language-française languages hide">Adhésion</span>
+							<span class="language-german languages hide">Mitgliedschaft</span>
+						</a>
+					</li>
 					<li>
 						<a target="_blank" href="https://www.facebook.com/Order-of-the-World-Templar-Knights-Der-Welt-Tempelherren-Orden-1465017220440357">
 							<img src="images/fb-icon.png" alt="Facebook Icon">
@@ -79,37 +136,50 @@
 			
 			
 			<!--- HEADER --->
-			<header class="container960">
-				<h1 class="h1-style1">Events</h1>
-			</header>
+			<div id="header" class="container960">
+				<h1 class="h1-style1 language-english languages show">Events</h1>
+				<h1 class="h1-style1 language-danish languages hide">Tilfælde</h1>
+				<h1 class="h1-style1 language-filipino languages hide">Events</h1>
+				<h1 class="h1-style1 language-française languages hide">Événement</h1>
+				<h1 class="h1-style1 language-german languages hide">Ereignisse</h1>
+			</div>
 			
 			
 			
 			<!--- BODY --->
-			<div id="body-events" class="container960">
+			<div id="body" class="container960">
 				
-				<ul>
-					<li>
-						
-						<img src="images/events/events-image001.jpg" alt="Ceremony Dec 2015" title="Ceremony Dec 2015">
-						
-						<div>
-							<h2>Ceremony 5th December 2015</h2>
+				<div id="body-content-events">
+				
+					<ul>
+						<li>
 							
-						</div>
-						
-					</li>
-				</ul>
+							<img src="images/events/events-image001.jpg" alt="Ceremony Dec 2015" title="Ceremony Dec 2015">
+							
+							<div>
+								<h2>Ceremony 5th December 2015</h2>
+								
+							</div>
+							
+						</li>
+					</ul>
+					
+				</div>
 				
 			</div>
 			
 			
 			<!--- FOOTER --->
-			<footer>
+			<div id="footer">
 				<a href="http://info.flagcounter.com/qZBj"><img src="http://s01.flagcounter.com/count/qZBj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-			</footer>
+			</div>
 			
 		</div>
 		<!--- END SITE CONTAINER --->
+		
+		
+		<!--- JAVASCRIPTS --->
+		<script src="scripts/main.js"></script>
+		
 	</body>
 </html>

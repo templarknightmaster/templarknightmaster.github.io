@@ -1,4 +1,5 @@
-/* FONTS */
+/* ================================================== */
+/* --- FONTS --- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
 
 @font-face {
@@ -7,14 +8,15 @@
 }
 
 
+
 /* ================================================== */
-/* LANGUAGES */
+/* --- LANGUAGES --- */
 
 #languages {
 	position: fixed;
 	top: 25px;
 	left: 25px;
-	width: 200px;
+	width: 170px;
 }
 
 #languages a {
@@ -22,8 +24,7 @@
 	display: inline-block;
 	text-align: left;
 	color: red;
-	text-decoration: none;
-	font-size: xx-large;
+	font-size: 2rem;
 	
 	height: 65px;
 	line-height: 60px;
@@ -37,18 +38,18 @@
 
 #languages a:hover span:first-child {
 	display: none;
-
 }
 
 #languages a:hover span:last-child {
 	display: inline-block;
-
+	cursor: hand;
+	cursor: pointer;
 }
 
 
 
 /* ================================================== */
-/* SIDEBAR */
+/* --- SIDEBAR --- */
 
 #sidebar 
 {
@@ -61,9 +62,12 @@
 {
 	display: inline-block;
 	text-align: left;
+	
 	color: red;
-	text-decoration: none;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
+	
+	width: 100%;
+	height: 50px;
 	line-height: 50px;
 }
 
@@ -73,13 +77,23 @@
 	height: 50px;
 }
 
+
+
 /* ================================================== */
-/* GENERAL */
+/* --- GENERAL --- */
 
 
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -88,21 +102,23 @@ ul {
 }
 
 li {
+	font-size: 1rem;
 	list-style-type: none;
 }
+
+a {
+	text-decoration: none;
+}
+
+
+/* ============================== */
+/* --- CUSTOM CLASS --- */
 
 .container960
 {
 	max-width: 960px;
 	margin: 0 auto;
-	box-sizing: border-box;
 	overflow: auto;
-}
-
-footer {
-	margin-top: 50px;
-	text-align: center;
-	clear: both;
 }
 
 .hide {
@@ -113,6 +129,12 @@ footer {
 	display: block !important;
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .h1-style1 {
 	font-family: "MediciText";
 	text-align: center;
@@ -121,38 +143,46 @@ footer {
 	font-weight: normal;
 }
 
-
-#site-container > header
+#header
 {
 	margin-bottom: 15px;
 }
 
-#site-container > header > h1
+#header > h1
 {
 	margin-bottom: 50px;
 }
 
+#body
+{
+	min-height: 500px;
+	padding: 15px 0;
+}
+
+#footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+
 
 /* ================================================== */
-/* HOME PAGE */
+/* --- HOME PAGE --- */
 
-#home-banner
+
+/* ============================== */
+/* --- HEADER --- */
+
+#banner-home
 {
 	display: block;
 	margin: 0 auto;
 }
 
-#body-home 
-{
-	min-height: 500px;
-}
+/* ============================== */
+/* --- CONTENT --- */
 
-#body-home > img 
-{
-	width: 100%;
-}
-
-#body-home > h2 
+#body-content-home > h2 
 {
 	font-size: 35px;
 	text-align: center;
@@ -160,9 +190,8 @@ footer {
 	margin-bottom: 25px;
 }
 
-#body-home > p 
+#body-content-home > p 
 {
-	font-family: 'Open Sans', sans-serif;
 	padding: 0 40px;
 	text-align: justify;
 	/*text-indent: 25px;*/
@@ -171,37 +200,38 @@ footer {
 
 
 /* ================================================== */
-/* GALLERY PAGE */
+/* --- GALLERY PAGE --- */
 
 
-#body-gallery > ul > li 
+/* ============================== */
+/* --- CONTENT --- */
+
+#body-content-gallery > ul > li 
 {
 	width: 100%;
 	min-height: 300px;
-	box-sizing: border-box;
 }
 
-#body-gallery > ul > li > img 
+#body-content-gallery > ul > li > .gallery-image > img 
 {
 	width: 250px;
 	height: 250px;
 	float: left;
 }
 
-#body-gallery > ul > li:nth-child(even) > img
+#body-content-gallery > ul > li:nth-child(even) > .gallery-image > img
 {
 	float: right;
 }
 
-#body-gallery > ul > li > div 
+#body-content-gallery > ul > li > .gallery-image-desc 
 {
 	width: 710px;
 	float: left;
 	padding: 0 25px;
-	box-sizing: border-box;
 }
 
-#body-gallery > ul > li > div > h2 
+#body-content-gallery > ul > li > .gallery-image-desc  > h2 
 {
 	text-align: center;
 	padding-bottom: 30px;
@@ -209,7 +239,7 @@ footer {
 	color: blue;
 }
 
-#body-gallery > ul > li > div > p 
+#body-content-gallery > ul > li > .gallery-image-desc  > p 
 {
 	text-align: justify;
 }
@@ -217,22 +247,25 @@ footer {
 
 
 /* ================================================== */
-/* EVENTS PAGE */
+/* --- EVENTS PAGE --- */
 
 
-#body-events > ul > li > img
+/* ============================== */
+/* --- CONTENT --- */
+
+#body-content-events > ul > li > img
 {
 	width: 500px;
 	float: left;
 }
 
-#body-events > ul > li > div
+#body-content-events > ul > li > div
 {
 	float: left;
 	width: 460px;
 }
 
-#body-events > ul > li > div > h2
+#body-content-events > ul > li > div > h2
 {
 	text-align: center;
 	padding-bottom: 30px;
