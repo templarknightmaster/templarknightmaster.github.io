@@ -32,15 +32,21 @@
 	position: relative;
 }
 
-#languages a span:last-child {
+/* hides all the span */
+#languages a > span {
 	display: none;
 }
 
-#languages a:hover span:first-child {
-	display: none;
+/* show only the first span */
+#languages a > span:first-child {
+	display: inline-block !important;
 }
 
-#languages a:hover span:last-child {
+#languages a:hover > span:first-child {
+	display: none !important;
+}
+
+#languages a:hover > span {
 	display: inline-block;
 	cursor: hand;
 	cursor: pointer;
@@ -271,4 +277,23 @@ a {
 	padding-bottom: 30px;
 	font-size: 27px;
 	color: blue;
+}
+
+/* ================================================== */
+/* OTHER INFORMATION PAGE */
+
+#body-content-other-informations > ul > li {
+	display: block;
+	width: 100%;
+	clear: both;
+	overflow: auto;
+}
+
+#body-content-other-informations > ul > li .other-informations-image > img {
+	width: 200px;
+	float: left;
+}
+
+#body-content-other-informations > ul > li:nth-child(even) .other-informations-image > img {
+	float:  right;
 }
