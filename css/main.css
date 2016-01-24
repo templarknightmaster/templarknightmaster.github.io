@@ -21,7 +21,7 @@
 
 #languages a {
 	
-	display: inline-block;
+	display: block;
 	text-align: left;
 	color: red;
 	font-size: 2rem;
@@ -39,18 +39,27 @@
 
 /* show only the first span */
 #languages a > span:first-child {
-	display: inline-block !important;
+	display: block;
 }
 
-#languages a:hover > span:first-child {
+/* hides all the span */
+#languages a:hover > span {
 	display: none !important;
 }
 
-#languages a:hover > span {
-	display: inline-block;
+#languages a:hover > span:last-child {
+	display: block !important;
 	cursor: hand;
 	cursor: pointer;
 }
+/*
+.no-hover:hover > span {
+	display: block !important;
+}
+
+.no-hover:hover > span:last-child {
+	display: none !important;
+}*/
 
 
 
@@ -70,7 +79,7 @@
 	text-align: left;
 	
 	color: red;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	
 	width: 100%;
 	height: 50px;
@@ -157,6 +166,7 @@ a {
 #header > h1
 {
 	margin-bottom: 50px;
+	text-transform: capitalize;
 }
 
 #body
@@ -296,4 +306,43 @@ a {
 
 #body-content-other-informations > ul > li:nth-child(even) .other-informations-image > img {
 	float:  right;
+}
+
+/* ================================================== */
+/* HISTORY PAGE */
+
+.list-style-1 > li 
+{
+	width: 100%;
+	margin-bottom: 25px;
+	overflow: auto;
+}
+
+.list-style-1 > li > .image > img {
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+.list-style-1 > li:nth-child(even) > .image > img {
+	float: right;
+}
+
+.list-style-1 > li > .description {
+	width: 710px;
+	float: left;
+	padding: 0 25px;
+}
+
+.list-style-1 > li > .description > h2 
+{
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 22px;
+	color: blue;
+}
+
+.list-style-1 > li > .description > p 
+{
+	text-align: justify;
 }
