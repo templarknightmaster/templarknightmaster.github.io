@@ -43,23 +43,15 @@
 }
 
 /* hides all the span */
-#languages a:hover > span {
+#languages a.hover:hover > span {
 	display: none !important;
 }
 
-#languages a:hover > span:last-child {
+#languages a.hover:hover > span:last-child {
 	display: block !important;
 	cursor: hand;
 	cursor: pointer;
 }
-/*
-.no-hover:hover > span {
-	display: block !important;
-}
-
-.no-hover:hover > span:last-child {
-	display: none !important;
-}*/
 
 
 
@@ -156,6 +148,18 @@ a {
 	font-size: 60px;
 	color: red;
 	font-weight: normal;
+}
+
+.h1-style2 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 60px;
+	color: red;
+	font-weight: normal;
+}
+
+.div-text-right > p {
+	text-align: right !important;
 }
 
 #header
@@ -314,7 +318,7 @@ a {
 .list-style-1 > li 
 {
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 75px;
 	overflow: auto;
 }
 
@@ -346,3 +350,42 @@ a {
 {
 	text-align: justify;
 }
+
+/**/
+
+.list-style-2 > li 
+{
+	width: 100%;
+	margin-bottom: 75px;
+	overflow: auto;
+}
+
+.list-style-2 > li > .image > img {
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+.list-style-2 > li:nth-child(even) > .image > img {
+	float: right;
+}
+
+.list-style-2 > li > .description {
+	width: 710px;
+	float: left;
+	padding: 0 25px;
+}
+
+.list-style-2 > li > .description > h2 
+{
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 22px;
+	color: blue;
+}
+
+.list-style-2 > li > .description > p 
+{
+	text-align: justify;
+}
+
