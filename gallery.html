@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-		<title>Templar Knights - Gallery</title>
+		<title> Gallery </title>
 		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
@@ -18,124 +18,137 @@
 		<div id="site-container">
 			
 			
-			<div id="languages">
+			<section id="sidebar">
 				
-				<ul>
+				<ul id="languages">
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-denmark.gif" alt="Denmark Flag" title="Denmark Flag">
 							</span>
-							<span onclick="showDanish()">Dansk</span>
+							<span class="text" onclick="showDanish()">Dansk</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-philippines.gif" alt="Philippines Flag" title="Philippines Flag">
 							</span>
-							<span onclick="showFilipino()">Tagalog</span>
+							<span class="text" onclick="showFilipino()">Tagalog</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-france.gif" alt="France Flag" title="France Flag">
 							</span>
-							<span onclick="showFrançaise()">Française</span>
+							<span class="text" onclick="showFrench()">Française</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-germany.gif" alt="Germany Flag" title="Germany Flag">
 							</span>
-							<span onclick="showGerman()">Deutsch</span>
-						</a>
-					</li>
-					<li>
-						<a href="#body" class="hover" style="font-size:1.3rem;">
-							<span class="language-english languages">other Groups</span>
-							<span class="language-danish languages hide">andre grupper</span>
-							<span class="language-filipino languages hide">ibang Grupo</span>
-							<span class="language-française languages hide">d’autres Groupes</span>
-							<span class="language-german languages hide">andere Gruppen</span>
-							<span>OMSTH</span>
-						</a>
-					</li>
-					<li>
-						<a href="other-informations.html" style="font-size:1rem;">
-							<span class="language-english languages">other Informations</span>
-							<span class="language-danish languages hide">andre oplysninger</span>
-							<span class="language-filipino languages hide">ibang Impormasyon</span>
-							<span class="language-française languages hide">autres renseignements</span>
-							<span class="language-german languages hide">andere Informationen</span>
+							<span class="text" onclick="showGerman()">Deutsch</span>
 						</a>
 					</li>
 				</ul>
 				
-			</div>
+				<ul id="others">
+					<li>
+						<a href="other-informations.html" id="other-info" class="no-hover">
+							<span class="language-english language show">other Informations</span>
+							<span class="language-danish language hide">andre oplysninger</span>
+							<span class="language-filipino language hide">ibang Impormasyon</span>
+							<span class="language-french language hide">autres renseignements</span>
+							<span class="language-german language hide">andere Informationen</span>
+						</a>
+					</li>
+					<li>
+						<span id="other-groups">
+							<span class="language-english language show">other Groups</span>
+							<span class="language-danish language hide">andre grupper</span>
+							<span class="language-filipino language hide">ibang Grupo</span>
+							<span class="size-1 language-french language hide">d’autres Groupes</span>
+							<span class="size-1 language-german language hide">andere Gruppen</span>
+							<a href="omsth.html">OMSTH</a>
+							<a href="kta.html">KTA</a>
+							<a href="smotj.html">SMOTJ</a>
+						</span>
+					</li>
+				</ul>
+				
+			</section>
 			
 			
 			
-			<div id="sidebar">
+			<nav id="main-menu">
 				<ul>
 					<li>
 						<a href="index.html">
-							<span class="language-english languages show">Home</span>
-							<span class="language-danish languages hide">Hjemmeside</span>
-							<span class="language-filipino languages hide">Home</span>
-							<span class="language-française languages hide">Accueil</span>
-							<span class="language-german languages hide">Haupt-Website</span>
+							<span class="language-english language show">Home</span>
+							<span class="language-danish language hide">Hjemmeside</span>
+							<span class="language-filipino language hide">Home</span>
+							<span class="language-french language hide">Accueil</span>
+							<span class="language-german language hide">Haupt-Website</span>
 						</a>
 					</li>
 						
 					<li>
 						<a target="_blank" title="templarknightsaustralia@gmail.com" href="mailto:templarknightsaustralia@gmail.com">
-							<span class="language-english languages show">Contact Us</span>
-							<span class="language-danish languages hide">Kontakt os</span>
-							<span class="language-filipino languages hide">Contact Us</span>
-							<span class="language-française languages hide">Contactez nous</span>
-							<span class="language-german languages hide">Kontakt</span>
+							<span class="language-english language show">Contact Us</span>
+							<span class="language-danish language hide">Kontakt os</span>
+							<span class="language-filipino language hide">Contact Us</span>
+							<span class="language-french language hide">Contactez nous</span>
+							<span class="language-german language hide">Kontakt</span>
 						</a>
 					</li>
 					
 					<li>
 						<a href="events.html">
-							<span class="language-english languages show">Events</span>
-							<span class="language-danish languages hide">Tilfælde</span>
-							<span class="language-filipino languages hide">Events</span>
-							<span class="language-française languages hide">Des événements</span>
-							<span class="language-german languages hide">Ereignisse</span>
+							<span class="language-english language show">Events</span>
+							<span class="language-danish language hide">Tilfælde</span>
+							<span class="language-filipino language hide">Events</span>
+							<span class="language-french language hide">Des événements</span>
+							<span class="language-german language hide">Ereignisse</span>
 						</a>
 					</li>
 					
-					<li>
+					<li class="active">
 						<a href="gallery.html">
-							<span class="language-english languages show">Gallery</span>
-							<span class="language-danish languages hide">Galleri</span>
-							<span class="language-filipino languages hide">Galeriya</span>
-							<span class="language-française languages hide">Gallerie</span>
-							<span class="language-german languages hide">Galerie</span>
+							<span class="language-english language show">Gallery</span>
+							<span class="language-danish language hide">Galleri</span>
+							<span class="language-filipino language hide">Galeriya</span>
+							<span class="language-french language hide">Gallerie</span>
+							<span class="language-german language hide">Galerie</span>
 						</a>
 					</li>
 					<li>
 						<a href="history.html">
-							<span class="language-english languages show">History</span>
-							<span class="language-danish languages hide">Historie</span>
-							<span class="language-filipino languages hide">Kasaysayan</span>
-							<span class="language-française languages hide">Histoire</span>
-							<span class="language-german languages hide">Vergangenheit</span>
+							<span class="language-english language show">History</span>
+							<span class="language-danish language hide">Historie</span>
+							<span class="language-filipino language hide">Kasaysayan</span>
+							<span class="language-french language hide">Histoire</span>
+							<span class="language-german language hide">Vergangenheit</span>
 						</a>
 					</li>
-					
 					<li>
-						<a href="">
-							<span class="language-english languages show">Membership</span>
-							<span class="language-danish languages hide">Medlemskab</span>
-							<span class="language-filipino languages hide">Membership</span>
-							<span class="language-française languages hide">Adhésion</span>
-							<span class="language-german languages hide">Mitgliedschaft</span>
+						<a href="ourHistory.html">
+							<span class="language-english language show">Our History</span>
+							<span class="language-danish language hide">vores Historie</span>
+							<span class="size-1 language-filipino language hide">Aming Kasaysayan</span>
+							<span class="language-french language hide">notre Histoire</span>
+							<span class="size-1 language-german language hide">unsere Vergangenheit</span>
+						</a>
+					</li>
+					<li>
+						<a href="membership.html">
+							<span class="language-english language show">Membership</span>
+							<span class="language-danish language hide">Medlemskab</span>
+							<span class="language-filipino language hide">Membership</span>
+							<span class="language-french language hide">Adhésion</span>
+							<span class="language-german language hide">Mitgliedschaft</span>
 						</a>
 					</li>
 					<li>
@@ -144,69 +157,69 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 			
 			
 			
 			<!--- HEADER --->
-			<div id="header" class="container960">
-				<h1 class="h1-style1 language-english languages show">Gallery</h1>
-				<h1 class="h1-style1 language-danish languages hide">Galleri</h1>
-				<h1 class="h1-style1 language-filipino languages hide">Galeriya </h1>
-				<h1 class="h1-style1 language-française languages hide">Galerie</h1>
-				<h1 class="h1-style1 language-german languages hide">Galerie</h1>
-			</div>
+			<section class="header center-960">
+				<h1 class="language-english language show">Gallery</h1>
+				<h1 class="language-danish language hide">Galleri</h1>
+				<h1 class="language-filipino language hide">Galeriya </h1>
+				<h1 class="language-french language hide">Galerie</h1>
+				<h1 class="language-german language hide">Galerie</h1>
+			</section>
 			
 			
 			
 			<!--- BODY --->
-			<div id="body" class="container960">
+			<section class="body center-960">
 	
 				
-				<div id="body-content-gallery">
+				<section id="body-content-gallery" class="content">
 				
-					<ul>
+					<ul class="list-style-gallery">
 						
 						<li>
 							
-							<div class="gallery-image">
+							<div class="image">
 								<img src="images/gallery/gallery-image001.jpg" alt="Templar Knights - Page Medal" title="Templar Knights - Page Medal">
 							</div>
 							
 							
 							
-							<div class="gallery-image-desc">
+							<div class="description">
 								
-								<h2 class="language-english languages show"> Neck Sash for a Page of the Order of the Templar Lords </h2>
-								<h2 class="language-danish languages hide"> Skærf for en Page eller Væbner </h2>
-								<h2 class="language-filipino languages hide"> Neck Sash for a Page of the Order of the Templar Lords </h2>
-								<h2 class="language-française languages hide"> Neck Sash pour une page de l'Ordre des Templiers Lords </h2>
-								<h2 class="language-german languages hide"> Das Ordensband für einen Pagen oder Knappen </h2>
+								<h2 class="language-english language show"> Neck Sash for a Page of the Order of the Templar Lords </h2>
+								<h2 class="language-danish language hide"> Skærf for en Page eller Væbner </h2>
+								<h2 class="language-filipino language hide"> Neck Sash for a Page of the Order of the Templar Lords </h2>
+								<h2 class="language-french language hide"> Neck Sash pour une page de l'Ordre des Templiers Lords </h2>
+								<h2 class="language-german language hide"> Das Ordensband für einen Pagen oder Knappen </h2>
 								
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The Neck Sash for a Squire or Page of the Order of the Templar Lords is a silver medal, 
 									worn around the neck on a red, purple or white ribbon. 
 									It is awarded to the new entry into the Order through a small festivity held. 
 									Also the Knights Passport is issued and presented to the new member. 
 								</p>
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Skærf for en Page eller Væbner fra det Order of The Templar Lords er en sølvmedalje some viser 2 riddere på en heste. 
 									Denne medalje bæres om halsen med en røde, purpur eller hvide bånd. 
 									Hver elkeld nyt medlem ville få denne medalje ved en små ceremoni, sammen med en ridder pas.
 								</p>
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang leeg sintas ng Squire o Page ng Order ng ​​Templar Lords ay isang pilak medalya Ipinapakita 2 Knights sa isang kabayo at ito ay pagod sa paligid ng leeg sa isang red, 
 									purple o puting laso Ito ay iginawad sa mga bagong entry sa Order sa pamamagitan ng isang maliit na kasalan gaganapin Gayundin ang Knights Passport ay ibinigay at ipinakita sa mga bagong miyembro.
 								</p>
 								
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									Le Neck Sash pour une Squire ou la page de l'Ordre des Templiers Lords est une médaille d'argent, porté autour du cou sur un ruban rouge, violet ou blanc. Il est décerné à la nouvelle entrée dans l'Ordre à travers une petite fête a eu lieu. Aussi le Passeport Knights est émis et présenté au nouveau membre.
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Das Ordensband für einen Pagen oder Knappen des Ordens der Welttempel Herren ist eine Silbermedaille die 2 Ritter auf einem Pferd zeigt. 
 									Sie wird um den Hals, mit einem roten, purpurnem oder weissen Band getragen. 
 									Es wird jedem Neuling bei einer kleinen Feier verliehen. Gleichzeitig wird auch der Ritterpass ausgestellt und übergeben.
@@ -220,41 +233,41 @@
 					
 						<li>
 							
-							<div class="gallery-image">
+							<div class="image">
 								<img src="images/gallery/gallery-image002.jpg" alt="Templar Knights - Knights Cross" title="Templar Knights - Knights Cross">
 							</div>
 							
 							
 							
-							<div class="gallery-image-desc">
+							<div class="description">
 								
-								<h2 class="language-english languages show"> Neck Sash for a Knight of the Order of the Templar Lords </h2>
-								<h2 class="language-danish languages hide"> Skærf for en ridder fra det Order of The Templar Lords </h2>
-								<h2 class="language-filipino languages hide"> Neck Sash for a Knight of the Order of the Templar Lords </h2>
-								<h2 class="language-française languages hide">Neck Sash pour un Chevalier de l'Ordre des Templiers Lords</h2>
-								<h2 class="language-german languages hide"> Ordensband für einen Ritter des Ordens der Welt Tempelherren </h2>
+								<h2 class="language-english language show"> Neck Sash for a Knight of the Order of the Templar Lords </h2>
+								<h2 class="language-danish language hide"> Skærf for en ridder fra det Order of The Templar Lords </h2>
+								<h2 class="language-filipino language hide"> Neck Sash for a Knight of the Order of the Templar Lords </h2>
+								<h2 class="language-french language hide">Neck Sash pour un Chevalier de l'Ordre des Templiers Lords</h2>
+								<h2 class="language-german language hide"> Ordensband für einen Ritter des Ordens der Welt Tempelherren </h2>
 								
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The Neck Sash for a Knight of the Order of the Templar Lords is a red 8 pointed (Amalfi) Cross with gold border.
 									All four parts of the Cross are held together by a gold Sun and is worn around the neck on a red, purple or white ribbon. 
 									It is, together with a sword, awarded to a new Knight at the dubbing ceremony. 
 									More Info about our Templar Cross, please refer to History. 
 								</p>
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Skærf for en ridder fra det Order of The Templar Lords er en rødt kryds, med gule kant. De fire pigge holdes sammen af ​​en guld sol og bæres rundt om halsen på en rød , lilla eller hvidt bånd . Denne skærf er, sammen med et sværd , tildeles en ny ridder ved ridderslag ceremonien.
 								</p>
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang leeg sintas ng Knight ng Order ng ​​Templar Lords ay isang red cross na may gintong border. Ang apat na spikes ay gaganapin kasama sa pamamagitan ng isang gintong araw at pagod sa paligid ng leeg sa isang red , purple o puting laso. Ito ay, kasama ang isang tabak, iginawad sa isang bagong Knight sa seremonya taba para sa balat.
 								</p>
 								
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									Le Neck Sash pour un Chevalier de l'Ordre des Templiers Lords est un rouge 8 pointu (Amalfi) Croix avec la frontière d'or. Tous les quatre parties de la Croix sont maintenus ensemble par une médaille d'or Soleil et est porté autour du cou sur un ruban rouge, violet ou blanc. Il est, avec une épée, attribué à un nouveau Chevalier à la cérémonie de doublage. Plus d'information sur la Croix des Templiers, s'il vous plaît se référer à l'histoire.
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Das Ordensband für einen Ritter des Welttempelherren Ordens ist ein rotes Kreuz mit gold Rand. Die vier Spitzen werden in der Mitte durch eine goldene Sonne zusammen gehalten und mit einem roten, purpur oder weissen Band um den Hals getragen. Es wird zusammen mit einem Schwert, bei dem Ritterschlag, dem neuen Ritter verliehen.
 								</p>
 								
@@ -266,36 +279,36 @@
 												
 						<li>
 							
-							<div class="gallery-image">
+							<div class="image">
 								<img src="images/gallery/gallery-image003.jpg" alt="Templar Knights - Passport" title="Templar Knights - Passport">
 							</div>
 							
 							
 							
-							<div class="gallery-image-desc">
+							<div class="description">
 								
-								<h2 class="language-english languages show"> Passport of the Order of the Templar Lords </h2>
-								<h2 class="language-danish languages hide"> Passport af Orden af World Templar Lords </h2>
-								<h2 class="language-filipino languages hide"> Passport of the Order of the Templar Lords </h2>
-								<h2 class="language-française languages hide">Passeport de l'Ordre des Templiers Lords</h2>
-								<h2 class="language-german languages hide"> Der Passport des Ordens der Welt Tempelherren </h2>
+								<h2 class="language-english language show"> Passport of the Order of the Templar Lords </h2>
+								<h2 class="language-danish language hide"> Passport af Orden af World Templar Lords </h2>
+								<h2 class="language-filipino language hide"> Passport of the Order of the Templar Lords </h2>
+								<h2 class="language-french language hide">Passeport de l'Ordre des Templiers Lords</h2>
+								<h2 class="language-german language hide"> Der Passport des Ordens der Welt Tempelherren </h2>
 								
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The Passport of the Order of the World Templar Lords is issued for a new Knight and holds information about him as well as dates of occasions of his life within the Order, 
 									such as dubbing, participations of ceremonies held and his latest rank and title. 
 									This document enables him to identify himself when traveling the world, while meeting other Templar Knights. 
-									So fare it enabled bearers to one or two free nights’ accommodation at fellow Knights.
+									So far it enabled bearers to one or two free nights’ accommodation at fellow Knights.
 								</p>
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Passport af Orden af World Templar Lords udstedes for en ny Knight og indeholder information om ham , 
 									samt dato for lejligheder af sit liv i bekendtgørelsen , såsom dubbing , ceremonier afholdt, og hans seneste rang og titel. 
 									Dette dokument gør det muligt for ham at identificere sig , når de rejser i verden, mens møde andre Templar Knights . 
 									Hidtil var det muligt med denne passport til en eller to gratis overnatninger på kollega Knights .
 								</p>
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang Pasaporte ng Order of the World Templar Lords ay ibinigay para sa isang bagong
 									Knight at humahawak ng impormasyon tungkol sa kanya pati na rin ang mga petsa
 									ng mga okasyon sa kanyang buhay sa loob ng Order, tulad ng taba para sa balat ,
@@ -306,11 +319,11 @@
 									libreng gabi ' accommodation sa kapwa Knights.
 								</p>
 								
-								<p class="language-française languages hide">
-									Le passeport de l'Ordre du Monde des Templiers Lords est délivré pour une nouvelle Knight et contient des informations sur lui ainsi que les dates de reprises de sa vie au sein de l'Ordre, comme le doublage, les participations de cérémonies tenues et son dernier rang et le titre. Ce document lui permet de se repérer lorsque vous voyagez dans le monde, tout en respectant les autres Templiers. Donc Vol elle a permis aux porteurs d'hébergement un ou deux nuits gratuites dans les autres chevaliers.
+								<p class="language-french language hide">
+									Le passeport de l'Ordre du Monde des Templiers Lords est délivré pour une nouvelle Knight et contient des informations sur lui ainsi que les dates de reprises de sa vie au sein de l'Ordre, comme le doublage, les participations de cérémonies tenues et son dernier rang et le titre. Ce document lui permet de se repérer lorsque vous voyagez dans le monde, tout en respectant les autres Templiers. Jusqu'à présent, il a permis porteurs à I'hébergement pour une ou deux nuits gratuites dans les autres chevaliers .
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Der Passport des Ordens der Welt Tempelherren wird für einem neuen Ritter ausgestellt
 									und beinhaltet Informationen über ihn selbst sowie als auch über Termine von Begebenheiten
 									seines Lebens im Orden, wie zB Ritterschlag, Beteiligungen an Zeremonien und
@@ -328,44 +341,44 @@
 						
 						<li>
 							
-							<div class="gallery-image">
+							<div class="image">
 								<img src="images/gallery/gallery-image004.jpg" alt="Templar Knights - Prior Cross" title="Templar Knights - Prior Cross">
 							</div>
 							
 							
 							
-							<div class="gallery-image-desc">
+							<div class="description">
 								
-								<h2 class="language-english languages show"> Neck Sash for a Prior of the Order of the Templar Lords </h2>
-								<h2 class="language-danish languages hide"> Skærf for en Prior fra det Order at The World Templar Lords </h2>
-								<h2 class="language-filipino languages hide"> Neck Sash for a Prior of the Order of the Templar Lords </h2>
-								<h2 class="language-française languages hide">Neck Sash pour une Prieur de l'Ordre des Templiers Lords</h2>
-								<h2 class="language-german languages hide"> Das Ordensband für einen Prior des Welttempelherren Ordens </h2>
+								<h2 class="language-english language show"> Neck Sash for a Prior of the Order of the Templar Lords </h2>
+								<h2 class="language-danish language hide"> Skærf for en Prior fra det Order at The World Templar Lords </h2>
+								<h2 class="language-filipino language hide"> Neck Sash for a Prior of the Order of the Templar Lords </h2>
+								<h2 class="language-french language hide">Neck Sash pour une Prieur de l'Ordre des Templiers Lords</h2>
+								<h2 class="language-german language hide"> Das Ordensband für einen Prior des Welttempelherren Ordens </h2>
 								
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The Neck Sash for a Prior of the Order of the Templar Lords is a red cross with gold border and a gold crown on top. 
 									The four spikes are held together by a gold sun and is worn around the neck on a red, purple or white ribbon. 
 									It is awarded to a new Prior at a special ceremony.
 								</p>
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Skærf for en Prior fra det Order at The World Templar Lords er en rødt kryds, 
 									med gule kant og en Krone på top. De fire pigge holdes sammen af ​​en guld sol og bæres rundt om halsen på en rød , 
 									lilla eller hvidt band. Denne skærf er tildeles en ny Prior ved en specielt ceremonie.
 								</p>
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang leeg sintas ng Bago ng Order ng ​​Templar Lords ay isang red cross na may gintong border at isang gintong korona sa tuktok. 
 									Ang apat na spikes ay gaganapin kasama sa pamamagitan ng isang gintong araw at pagod sa paligid ng leeg sa isang red , purple o puting laso. 
 									Ito ay iginawad sa isang bagong Bago sa isang espesyal na seremonya.
 								</p>
 								
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									Le Neck Sash pour une Prieur de l'Ordre des Templiers Lords est une croix rouge avec une bordure or et une couronne d'or sur le dessus. Les quatre pointes sont maintenues ensemble par un soleil d'or et il est porté autour du cou sur un ruban rouge, violet ou blanc. Il est décerné à un nouveau Avant lors d'une cérémonie spéciale.
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Das Ordensband für einen Prior des Welttempelherren Ordens ist ein rotes Kreuz mit gold Rand und einer Krone an der oberen Spitze. 
 									Die vier Spitzen werden in der Mitte durch eine goldene Sonne zusammen gehalten und mit einem roten, 
 									purpur oder weissen Band um den Hals getragen. Es wird dem neuen Prior bei einer speziellen Feier verliehen.
@@ -377,43 +390,43 @@
 						
 						<li>
 							
-							<div class="gallery-image">
+							<div class="image">
 								<img src="images/gallery/gallery-image005.jpg" alt="Templar Knights - Great Prior Cross" title="Templar Knights - Great Prior Cross">
 							</div>
 							
 							
 							
-							<div class="gallery-image-desc">
+							<div class="description">
 								
-								<h2 class="language-english languages show"> Neck Sash for a Grand Prior of the Order of the Templar Lords </h2>
-								<h2 class="language-danish languages hide"> Skærf for en Stor Prior fra det Order at The Templar Lords </h2>
-								<h2 class="language-filipino languages hide"> Neck Sash for a Grand Prior of the Order of the Templar Lords </h2>
-								<h2 class="language-française languages hide">Neck Sash pour un Grand Prieur de l'Ordre des Templiers Lords</h2>
-								<h2 class="language-german languages hide"> Das Ordensband für einen Groß Prior des Ordens </h2>
+								<h2 class="language-english language show"> Neck Sash for a Grand Prior of the Order of the Templar Lords </h2>
+								<h2 class="language-danish language hide"> Skærf for en Stor Prior fra det Order at The Templar Lords </h2>
+								<h2 class="language-filipino language hide"> Neck Sash for a Grand Prior of the Order of the Templar Lords </h2>
+								<h2 class="language-french language hide">Neck Sash pour un Grand Prieur de l'Ordre des Templiers Lords</h2>
+								<h2 class="language-german language hide"> Das Ordensband für einen Groß Prior des Ordens </h2>
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The decoration for a Grand Prior of the Order of the Templar Lords is a red cross with gold border and a gold crown on top. 
 									The four red spikes are held together by a gold sun with four golden spikes and is worn on the left or right chest and by some members around the neck on a purple ribbon. 
 									It is awarded to a new Grand Prior at a special ceremony with Gala Dinner.
 								</p>
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Skærf for en Stor Prior fra det Order at The World Templar Lords er en rødt kryds, med gule kant og en Krone på top. 
 									De fire røde pigge holdes sammen af ​​en guld sol med fire guld pigge og bæres på den venstre eller højre brystsiden nongen medlemmer rundt om halsen på en lilla bånd. 
 									Denne skærf er tildeles en ny Stor Prior ved en specielt ceremonie med Galamiddag. 
 								</p>
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang leeg sintas ng Bago ng Order ng ​​Templar Lords ay isang red cross na may gintong border at isang gintong korona sa tuktok. 
 									Ang apat na spikes ay gaganapin kasama sa pamamagitan ng isang gintong araw at pagod sa paligid ng leeg sa isang red , purple o puting laso. 
 									Ito ay iginawad sa isang bagong Bago sa isang espesyal na seremonya at Gala hapunan.
 								</p>
 								
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									La décoration pour un Grand Prieur de l'Ordre des Templiers Lords est une croix rouge avec une bordure d'or et une couronne d'or sur le dessus. Les quatre pointes rouges sont maintenus ensemble par un soleil d'or avec quatre pointes dorées et se porte sur la poitrine gauche ou à droite et par certains membres autour du cou sur un ruban violet. Il est décerné à un nouveau Grand Prieur lors d'une cérémonie spéciale avec dîner de gala.
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Das Ordensband für einen Groß Prior des Welttempelherren Ordens ist ein rotes Kreuz mit gold Rand und einer Krone an der oberen Spitze. 
 									Die vier roten Spitzen werden in der Mitte durch eine goldene Sonne mit vier goldenen Spitzen zusammen gehalten und wird auf der linken oder rechten Brustseite, 
 									bei manchen Mitgliedern mit einem purpur Band um den Hals getragen. Es wird dem neuen Groß Prior bei einer speziellen Feier mit Gala Festessen verliehen.
@@ -427,15 +440,15 @@
 						
 					</ul>
 					
-				</div>
+				</section>
 					
-			</div>
+			</section>
 			
 			
 			<!--- FOOTER --->
-			<div id="footer">
+			<section class="footer">
 				<a href="http://info.flagcounter.com/qZBj"><img src="http://s01.flagcounter.com/count/qZBj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-			</div>
+			</section>
 			
 			
 		</div>

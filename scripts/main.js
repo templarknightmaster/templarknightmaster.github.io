@@ -1,6 +1,6 @@
 function hideLanguages() {
 				
-	var allLanguage = document.querySelectorAll( '.languages' );
+	var allLanguage = document.querySelectorAll( '.language' );
 
 	for ( i = 0, length = allLanguage.length ; i < length ; i++ )
 	{
@@ -40,11 +40,11 @@ function showFilipino()
 }
 
 
-function showFrançaise()
+function showFrench()
 {
 	hideLanguages();
 	
-	var française = document.querySelectorAll( '.language-française' );
+	var française = document.querySelectorAll( '.language-french' );
 	
 	showLanguage(française);
 }

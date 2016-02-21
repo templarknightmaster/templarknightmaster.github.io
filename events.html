@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-		<title> Templar Knights - Events </title>
+		<title> Events </title>
 		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
@@ -18,124 +18,137 @@
 		<div id="site-container">
 			
 			
-			<div id="languages">
+			<section id="sidebar">
 				
-				<ul>
+				<ul id="languages">
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-denmark.gif" alt="Denmark Flag" title="Denmark Flag">
 							</span>
-							<span onclick="showDanish()">Dansk</span>
+							<span class="text" onclick="showDanish()">Dansk</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-philippines.gif" alt="Philippines Flag" title="Philippines Flag">
 							</span>
-							<span onclick="showFilipino()">Tagalog</span>
+							<span class="text" onclick="showFilipino()">Tagalog</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-france.gif" alt="France Flag" title="France Flag">
 							</span>
-							<span onclick="showFrançaise()">Française</span>
+							<span class="text" onclick="showFrench()">Française</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-germany.gif" alt="Germany Flag" title="Germany Flag">
 							</span>
-							<span onclick="showGerman()">Deutsch</span>
-						</a>
-					</li>
-					<li>
-						<a href="#body" class="hover" style="font-size:1.3rem;">
-							<span class="language-english languages">other Groups</span>
-							<span class="language-danish languages hide">andre grupper</span>
-							<span class="language-filipino languages hide">ibang Grupo</span>
-							<span class="language-française languages hide">d’autres Groupes</span>
-							<span class="language-german languages hide">andere Gruppen</span>
-							<span>OMSTH</span>
-						</a>
-					</li>
-					<li>
-						<a href="other-informations.html" style="font-size:1rem;">
-							<span class="language-english languages">other Informations</span>
-							<span class="language-danish languages hide">andre oplysninger</span>
-							<span class="language-filipino languages hide">ibang Impormasyon</span>
-							<span class="language-française languages hide">autres renseignements</span>
-							<span class="language-german languages hide">andere Informationen</span>
+							<span class="text" onclick="showGerman()">Deutsch</span>
 						</a>
 					</li>
 				</ul>
 				
-			</div>
+				<ul id="others">
+					<li>
+						<a href="other-informations.html" id="other-info" class="no-hover">
+							<span class="language-english language show">other Informations</span>
+							<span class="language-danish language hide">andre oplysninger</span>
+							<span class="language-filipino language hide">ibang Impormasyon</span>
+							<span class="language-french language hide">autres renseignements</span>
+							<span class="language-german language hide">andere Informationen</span>
+						</a>
+					</li>
+					<li>
+						<span id="other-groups">
+							<span class="language-english language show">other Groups</span>
+							<span class="language-danish language hide">andre grupper</span>
+							<span class="language-filipino language hide">ibang Grupo</span>
+							<span class="size-1 language-french language hide">d’autres Groupes</span>
+							<span class="size-1 language-german language hide">andere Gruppen</span>
+							<a href="omsth.html">OMSTH</a>
+							<a href="kta.html">KTA</a>
+							<a href="smotj.html">SMOTJ</a>
+						</span>
+					</li>
+				</ul>
+				
+			</section>
 			
 			
 			
-			<div id="sidebar">
+			<nav id="main-menu">
 				<ul>
 					<li>
 						<a href="index.html">
-							<span class="language-english languages show">Home</span>
-							<span class="language-danish languages hide">Hjemmeside</span>
-							<span class="language-filipino languages hide">Home</span>
-							<span class="language-française languages hide">Accueil</span>
-							<span class="language-german languages hide">Haupt-Website</span>
+							<span class="language-english language show">Home</span>
+							<span class="language-danish language hide">Hjemmeside</span>
+							<span class="language-filipino language hide">Home</span>
+							<span class="language-french language hide">Accueil</span>
+							<span class="language-german language hide">Haupt-Website</span>
 						</a>
 					</li>
 						
 					<li>
 						<a target="_blank" title="templarknightsaustralia@gmail.com" href="mailto:templarknightsaustralia@gmail.com">
-							<span class="language-english languages show">Contact Us</span>
-							<span class="language-danish languages hide">Kontakt os</span>
-							<span class="language-filipino languages hide">Contact Us</span>
-							<span class="language-française languages hide">Contactez nous</span>
-							<span class="language-german languages hide">Kontakt</span>
+							<span class="language-english language show">Contact Us</span>
+							<span class="language-danish language hide">Kontakt os</span>
+							<span class="language-filipino language hide">Contact Us</span>
+							<span class="language-french language hide">Contactez nous</span>
+							<span class="language-german language hide">Kontakt</span>
 						</a>
 					</li>
 					
-					<li>
+					<li class="active">
 						<a href="events.html">
-							<span class="language-english languages show">Events</span>
-							<span class="language-danish languages hide">Tilfælde</span>
-							<span class="language-filipino languages hide">Events</span>
-							<span class="language-française languages hide">Des événements</span>
-							<span class="language-german languages hide">Ereignisse</span>
+							<span class="language-english language show">Events</span>
+							<span class="language-danish language hide">Tilfælde</span>
+							<span class="language-filipino language hide">Events</span>
+							<span class="language-french language hide">Des événements</span>
+							<span class="language-german language hide">Ereignisse</span>
 						</a>
 					</li>
 					
 					<li>
 						<a href="gallery.html">
-							<span class="language-english languages show">Gallery</span>
-							<span class="language-danish languages hide">Galleri</span>
-							<span class="language-filipino languages hide">Galeriya</span>
-							<span class="language-française languages hide">Gallerie</span>
-							<span class="language-german languages hide">Galerie</span>
+							<span class="language-english language show">Gallery</span>
+							<span class="language-danish language hide">Galleri</span>
+							<span class="language-filipino language hide">Galeriya</span>
+							<span class="language-french language hide">Gallerie</span>
+							<span class="language-german language hide">Galerie</span>
 						</a>
 					</li>
 					<li>
 						<a href="history.html">
-							<span class="language-english languages show">History</span>
-							<span class="language-danish languages hide">Historie</span>
-							<span class="language-filipino languages hide">Kasaysayan</span>
-							<span class="language-française languages hide">Histoire</span>
-							<span class="language-german languages hide">Vergangenheit</span>
+							<span class="language-english language show">History</span>
+							<span class="language-danish language hide">Historie</span>
+							<span class="language-filipino language hide">Kasaysayan</span>
+							<span class="language-french language hide">Histoire</span>
+							<span class="language-german language hide">Vergangenheit</span>
 						</a>
 					</li>
-					
 					<li>
-						<a href="">
-							<span class="language-english languages show">Membership</span>
-							<span class="language-danish languages hide">Medlemskab</span>
-							<span class="language-filipino languages hide">Membership</span>
-							<span class="language-française languages hide">Adhésion</span>
-							<span class="language-german languages hide">Mitgliedschaft</span>
+						<a href="ourHistory.html">
+							<span class="language-english language show">Our History</span>
+							<span class="language-danish language hide">vores Historie</span>
+							<span class="size-1 language-filipino language hide">Aming Kasaysayan</span>
+							<span class="language-french language hide">notre Histoire</span>
+							<span class="size-1 language-german language hide">unsere Vergangenheit</span>
+						</a>
+					</li>
+					<li>
+						<a href="membership.html">
+							<span class="language-english language show">Membership</span>
+							<span class="language-danish language hide">Medlemskab</span>
+							<span class="language-filipino language hide">Membership</span>
+							<span class="language-french language hide">Adhésion</span>
+							<span class="language-german language hide">Mitgliedschaft</span>
 						</a>
 					</li>
 					<li>
@@ -144,32 +157,41 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 			
 			
 			
 			<!--- HEADER --->
-			<div id="header" class="container960">
-				<h1 class="h1-style1 language-english languages show">Events</h1>
-				<h1 class="h1-style1 language-danish languages hide">Tilfælde</h1>
-				<h1 class="h1-style1 language-filipino languages hide">Events</h1>
-				<h1 class="h1-style1 language-française languages hide">Événement</h1>
-				<h1 class="h1-style1 language-german languages hide">Ereignisse</h1>
-			</div>
+			<section class="header center-960">
+				<h1 class="language-english language show">Events</h1>
+				<h1 class="language-danish language hide">Tilfælde</h1>
+				<h1 class="language-filipino language hide">Events</h1>
+				<h1 class="language-french language hide">Événement</h1>
+				<h1 class="language-german language hide">Ereignisse</h1>
+			</section>
 			
 			
 			
 			<!--- BODY --->
-			<div id="body" class="container960">
+			<section class="body center-960">
 				
-				<div id="body-content-events">
+				<section id="body-content-events">
+					
+					<article>
+						<p>
+							visit the Medieval Fayre in Blacktown/Nurragingy Reserve on 21st and 22nd May 2016
+						</p>
+					</article>
 				
-					<ul>
+					<ul class="list-style-events">
+						
 						<li>
 							
-							<img src="images/events/events-image001.jpg" alt="Ceremony Dec 2015" title="Ceremony Dec 2015">
+							<div class="image">
+								<img src="images/events/events-image001.jpg" alt="Ceremony Dec 2015" title="Ceremony Dec 2015">
+							</div>
 							
-							<div>
+							<div class="description">
 								<h2>Ceremony 5th December 2015</h2>
 								
 							</div>
@@ -177,15 +199,15 @@
 						</li>
 					</ul>
 					
-				</div>
+				</section>
 				
-			</div>
+			</section>
 			
 			
 			<!--- FOOTER --->
-			<div id="footer">
+			<section class="footer">
 				<a href="http://info.flagcounter.com/qZBj"><img src="http://s01.flagcounter.com/count/qZBj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-			</div>
+			</section>
 			
 		</div>
 		<!--- END SITE CONTAINER --->

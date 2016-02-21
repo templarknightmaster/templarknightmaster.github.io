@@ -2,7 +2,7 @@
 <html>
 	<head>
 		
-		<title>Templar Knights</title>
+		<title>Other Informations</title>
 		
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
@@ -20,124 +20,137 @@
 		<div id="site-container">
 			
 		
-			<div id="languages">
+			<section id="sidebar">
 				
-				<ul>
+				<ul id="languages">
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-denmark.gif" alt="Denmark Flag" title="Denmark Flag">
 							</span>
-							<span onclick="showDanish()">Dansk</span>
+							<span class="text" onclick="showDanish()">Dansk</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-philippines.gif" alt="Philippines Flag" title="Philippines Flag">
 							</span>
-							<span onclick="showFilipino()">Tagalog</span>
+							<span class="text" onclick="showFilipino()">Tagalog</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-france.gif" alt="France Flag" title="France Flag">
 							</span>
-							<span onclick="showFrançaise()">Française</span>
+							<span class="text" onclick="showFrench()">Française</span>
 						</a>
 					</li>
 					<li>
-						<a href="#body" class="hover">
-							<span>
+						<a href="#body">
+							<span class="image">
 								<img src="images/flags/flag-germany.gif" alt="Germany Flag" title="Germany Flag">
 							</span>
-							<span onclick="showGerman()">Deutsch</span>
-						</a>
-					</li>
-					<li>
-						<a href="#body" class="hover" style="font-size:1.3rem;">
-							<span class="language-english languages">other Groups</span>
-							<span class="language-danish languages hide">andre grupper</span>
-							<span class="language-filipino languages hide">ibang Grupo</span>
-							<span class="language-française languages hide">d’autres Groupes</span>
-							<span class="language-german languages hide">andere Gruppen</span>
-							<span>OMSTH</span>
-						</a>
-					</li>
-					<li>
-						<a href="other-informations.html" style="font-size:1rem;">
-							<span class="language-english languages">other Informations</span>
-							<span class="language-danish languages hide">andre oplysninger</span>
-							<span class="language-filipino languages hide">ibang Impormasyon</span>
-							<span class="language-française languages hide">autres renseignements</span>
-							<span class="language-german languages hide">andere Informationen</span>
+							<span class="text" onclick="showGerman()">Deutsch</span>
 						</a>
 					</li>
 				</ul>
 				
-			</div>
+				<ul id="others">
+					<li>
+						<a href="other-informations.html" id="other-info" class="no-hover">
+							<span class="language-english language show">other Informations</span>
+							<span class="language-danish language hide">andre oplysninger</span>
+							<span class="language-filipino language hide">ibang Impormasyon</span>
+							<span class="language-french language hide">autres renseignements</span>
+							<span class="language-german language hide">andere Informationen</span>
+						</a>
+					</li>
+					<li>
+						<span id="other-groups">
+							<span class="language-english language show">other Groups</span>
+							<span class="language-danish language hide">andre grupper</span>
+							<span class="language-filipino language hide">ibang Grupo</span>
+							<span class="size-1 language-french language hide">d’autres Groupes</span>
+							<span class="size-1 language-german language hide">andere Gruppen</span>
+							<a href="omsth.html">OMSTH</a>
+							<a href="kta.html">KTA</a>
+							<a href="smotj.html">SMOTJ</a>
+						</span>
+					</li>
+				</ul>
+				
+			</section>
 			
 			
 			
-			<div id="sidebar">
+			<nav id="main-menu">
 				<ul>
 					<li>
 						<a href="index.html">
-							<span class="language-english languages show">Home</span>
-							<span class="language-danish languages hide">Hjemmeside</span>
-							<span class="language-filipino languages hide">Home</span>
-							<span class="language-française languages hide">Accueil</span>
-							<span class="language-german languages hide">Haupt-Website</span>
+							<span class="language-english language show">Home</span>
+							<span class="language-danish language hide">Hjemmeside</span>
+							<span class="language-filipino language hide">Home</span>
+							<span class="language-french language hide">Accueil</span>
+							<span class="language-german language hide">Haupt-Website</span>
 						</a>
 					</li>
 						
 					<li>
 						<a target="_blank" title="templarknightsaustralia@gmail.com" href="mailto:templarknightsaustralia@gmail.com">
-							<span class="language-english languages show">Contact Us</span>
-							<span class="language-danish languages hide">Kontakt os</span>
-							<span class="language-filipino languages hide">Contact Us</span>
-							<span class="language-française languages hide">Contactez nous</span>
-							<span class="language-german languages hide">Kontakt</span>
+							<span class="language-english language show">Contact Us</span>
+							<span class="language-danish language hide">Kontakt os</span>
+							<span class="language-filipino language hide">Contact Us</span>
+							<span class="language-french language hide">Contactez nous</span>
+							<span class="language-german language hide">Kontakt</span>
 						</a>
 					</li>
 					
 					<li>
 						<a href="events.html">
-							<span class="language-english languages show">Events</span>
-							<span class="language-danish languages hide">Tilfælde</span>
-							<span class="language-filipino languages hide">Events</span>
-							<span class="language-française languages hide">Des événements</span>
-							<span class="language-german languages hide">Ereignisse</span>
+							<span class="language-english language show">Events</span>
+							<span class="language-danish language hide">Tilfælde</span>
+							<span class="language-filipino language hide">Events</span>
+							<span class="language-french language hide">Des événements</span>
+							<span class="language-german language hide">Ereignisse</span>
 						</a>
 					</li>
 					
 					<li>
 						<a href="gallery.html">
-							<span class="language-english languages show">Gallery</span>
-							<span class="language-danish languages hide">Galleri</span>
-							<span class="language-filipino languages hide">Galeriya</span>
-							<span class="language-française languages hide">Gallerie</span>
-							<span class="language-german languages hide">Galerie</span>
+							<span class="language-english language show">Gallery</span>
+							<span class="language-danish language hide">Galleri</span>
+							<span class="language-filipino language hide">Galeriya</span>
+							<span class="language-french language hide">Gallerie</span>
+							<span class="language-german language hide">Galerie</span>
 						</a>
 					</li>
 					<li>
 						<a href="history.html">
-							<span class="language-english languages show">History</span>
-							<span class="language-danish languages hide">Historie</span>
-							<span class="language-filipino languages hide">Kasaysayan</span>
-							<span class="language-française languages hide">Histoire</span>
-							<span class="language-german languages hide">Vergangenheit</span>
+							<span class="language-english language show">History</span>
+							<span class="language-danish language hide">Historie</span>
+							<span class="language-filipino language hide">Kasaysayan</span>
+							<span class="language-french language hide">Histoire</span>
+							<span class="language-german language hide">Vergangenheit</span>
 						</a>
 					</li>
-					
 					<li>
-						<a href="">
-							<span class="language-english languages show">Membership</span>
-							<span class="language-danish languages hide">Medlemskab</span>
-							<span class="language-filipino languages hide">Membership</span>
-							<span class="language-française languages hide">Adhésion</span>
-							<span class="language-german languages hide">Mitgliedschaft</span>
+						<a href="ourHistory.html">
+							<span class="language-english language show">Our History</span>
+							<span class="language-danish language hide">vores Historie</span>
+							<span class="size-1 language-filipino language hide">Aming Kasaysayan</span>
+							<span class="language-french language hide">notre Histoire</span>
+							<span class="size-1 language-german language hide">unsere Vergangenheit</span>
+						</a>
+					</li>
+					<li>
+						<a href="membership.html">
+							<span class="language-english language show">Membership</span>
+							<span class="language-danish language hide">Medlemskab</span>
+							<span class="language-filipino language hide">Membership</span>
+							<span class="language-french language hide">Adhésion</span>
+							<span class="language-german language hide">Mitgliedschaft</span>
 						</a>
 					</li>
 					<li>
@@ -146,62 +159,66 @@
 						</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 			
 			
 			
 			<!--- HEADER --->
-			<div id="header" class="container960">
-				<h1 class="h1-style1">Other Informations</h1>
-			</div>
+			<section class="header center-960">
+				<h1 class="language-english language show">Other Informations</h1>
+				<h1 class="language-danish language hide">andre oplysninger</h1>
+				<h1 class="language-filipino language hide">ibang Impormasyon</h1>
+				<h1 class="language-french language hide">autres renseignements</h1>
+				<h1 class="language-german language hide">andere Informationen</h1>
+			</section>
 	
 	
 	
 			<!--- BODY --->
-			<div id="body" class="container960">
+			<section class="body center-960">
 				
 				
 				
-				<div id="body-content-other-informations">
+				<section id="body-content-other-informations">
 					
-					<ul class="list-style-2">
+					<ul class="list-style-other-informations">
 						<li>
 							<div class="image">
 								<img src="images/other-informations/other-informations-image001.png" alt="Fribourg" title="Fribourg">
 							</div>
 							
 							<div class="description">
-								<h2 class="language-english languages show"> Fribourg flag </h2>
-								<h2 class="language-danish languages hide"> Fribourg flag </h2>
-								<h2 class="language-filipino languages hide"> Fribourg flag </h2>
-								<h2 class="language-française languages hide"> Fribourg drapeau </h2>
-								<h2 class="language-german languages hide"> Freiburg fahne </h2>
+								<h2 class="language-english language show"> Fribourg flag </h2>
+								<h2 class="language-danish language hide"> Fribourg flag </h2>
+								<h2 class="language-filipino language hide"> Fribourg flag </h2>
+								<h2 class="language-french language hide"> Fribourg drapeau </h2>
+								<h2 class="language-german language hide"> Freiburg fahne </h2>
 								
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									This black and white flag [per fess Sable and Argent] is attested from 1410, but possibly dates to the 13th century. Fribourg (Freiburg, Friburgo) had until 1831 an alternative coat of arms, showing a white castle on a blue field.
 								</p>			
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Denne sorte og hvide flag [per fess Sable and Argent] i 1410 vidner , men muligvis dateres tilbage til det 13. århundrede. Fribourg ( Freiburg , Friburgo ) havde indtil 1831 en alternativ våbenskjold , der viser en hvid borg på blå felt .
 								</p>			
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang itim at puting bandila per fess Sable and Argent [per fess Sable and Argent] ay pinatutunayan mula sa 1410, ngunit posibleng mga petsa sa ika-13 siglo . Fribourg ( Freiburg, Friburgo ) ay nagkaroon ng isang alternatibong iskudo , na nagpapakita ng isang puting kastilyo sa isang blue field hanggang 1831 .
 								</p>
 											
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									Ce drapeau noir et blanc [coupé sable et d'argent] est attestée dès 1410, mais peut-être remonte au 13ème siècle . Fribourg ( Freiburg , Fribourg ) avait une alternative armoiries , montrant un château blanc sur un champ bleu jusqu'en 1831 .
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Diese schwarzweisse Fahne [per fess Sable and Argent] erstmals 1410 erwähnt, aber möglicherweise aus dem 13. Jahrhundert. Fribourg (Freiburg , Friburgo) hatte bis  1831 ein alternatives Wappen, welches eine weiße Burg auf einem blauen Feld zeigte.
 								</p>
 							</div>
 						</li>
 						<li>
 							<div class="image">
-								<img style="border:1px solid #333;" src="images/other-informations/other-informations-image002.png" alt="Turkopole" title="Turkopole">
+								<img src="images/other-informations/other-informations-image002.png" alt="Turkopole" title="Turkopole">
 							</div>
 							
 							<div class="description"></div>
@@ -209,28 +226,28 @@
 						
 						<li>
 							<div class="image">
-								<img src="images/history/history-image003.png" style="width:100px; height:auto;" alt="Johanniter Knights" title="Johanniter Knights">
+								<img src="images/other-informations/other-informations-image003.png" alt="Johanniter Knights" title="Johanniter Knights">
 							</div>
 							
 							<div class="description">
 								
-								<p class="language-english languages show">
+								<p class="language-english language show">
 									The position of the german Johanniter Knights in the battle was indicated by a red flag with a white Cross [Argent with fillet cross Gules]
 								</p>	
 										
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									Positionen i kamp af de tyske Johanniter Riddere blev angivet af denne røde flag med hvidt kors [Argent with fillet cross Gules]
 								</p>		
 									
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									Ang posisyon sa labanan ng aleman Johanniter Knights ay ipinapahiwatig ng pulang bandila na may white cross [Argent with fillet cross Gules]
 								</p>		
 									
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									à venir
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									Die Position der Johanniter Ritter im Kampfe wurde durch eine rote Flagge mit weißem Kreuz angegeben [Argent with fillet cross Gules]
 								</p>
 								
@@ -239,27 +256,27 @@
 						
 						<li>
 							<div class="image">
-								<img src="images/history/history-image004.jpg" style="width:100px; height:auto; border:1px solid #333; padding:10px;" alt="Hospittaler flag" title="Hospittaler flag">
+								<img src="images/other-informations/other-informations-image004.jpg" alt="Hospittaler flag" title="Hospittaler flag">
 							</div>
 							
-							<div class="description div-text-right" style="width:850px;">
-								<p class="language-english languages show">
+							<div class="description div-text-right">
+								<p class="language-english language show">
 									and later with this white flag with black forked cross [Gules with cross Fourchée].
 								</p>			
 								
-								<p class="language-danish languages hide">
+								<p class="language-danish language hide">
 									og senere med denne hvide flag med sort kløvet kors [Gules with cross Fourchée].
 								</p>			
 								
-								<p class="language-filipino languages hide">
+								<p class="language-filipino language hide">
 									at sa ibang pagkakataon sa mga ito puting bandila na may itim na magkahiwalay krus [Gules with cross Fourchée].
 								</p>			
 								
-								<p class="language-française languages hide">
+								<p class="language-french language hide">
 									à venir
 								</p>
 								
-								<p class="language-german languages hide">
+								<p class="language-german language hide">
 									und später mit dieser weißen Fahne mit schwarzen Gabelkreuz [Gules with cross Fourchée].
 								</p>
 							</div>
@@ -269,16 +286,16 @@
 					
 					
 					
-				</div>
+				</section>
 				
-			</div>
+			</section>
 			
 			
 			
 			<!--- FOOTER --->
-			<div id="footer">
+			<section class="footer">
 				<a href="http://info.flagcounter.com/qZBj"><img src="http://s01.flagcounter.com/count/qZBj/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-			</div>
+			</section>
 			
 			
 		</div>

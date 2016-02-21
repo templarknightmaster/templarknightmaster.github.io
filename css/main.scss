@@ -1,0 +1,286 @@
+/* IMPORTS */
+
+@import 'partials/fonts';
+@import 'partials/reset';
+@import 'partials/general';
+@import 'partials/nav';
+
+
+/* GENERAL */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+/* CUSTOM CLASS */
+
+.center-960 {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.font-open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* SECTIONS */
+
+.header
+{
+	margin-bottom: 15px;
+	
+	> h1 {
+		font-family: "MediciText";
+		font-weight: 400;
+		font-size: 60px;
+		
+		text-align: center;
+		text-transform: capitalize;
+		
+		color: red;
+		margin-bottom: 50px;
+	}
+	
+	> h2 {
+		font-size: 35px;
+		text-align: center;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
+}
+
+.body
+{
+	min-height: 500px;
+	padding: 15px 0;
+	
+	.content {
+		
+		article {
+			
+			margin-bottom: 50px;
+			
+			p {
+				padding: 0 40px;
+				text-align: justify;
+				line-height: 1.5rem;
+			}
+		}
+		
+	}
+	
+	footer {
+		margin-top: 50px;
+		
+		p {
+			text-align: center;
+			font-size: 2rem;	
+		}
+	}
+}
+
+.footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+
+
+
+/* ================================================== */
+/* --- SIDEBAR --- */
+
+#sidebar 
+{
+	position: fixed;
+	top: 25px;
+	left: 25px;
+	width: 170px;
+	
+	li {
+		display: block;
+		color: red;
+		height: 65px;
+		line-height: 60px;
+	}
+	
+	a {
+		color: red;
+		font-size: 2rem;
+	}
+	
+	#languages 
+	{
+		a {
+			
+			&:hover {
+				
+				.image {
+					display: none;
+				}
+				
+				.text {
+					display: block;
+				}
+			}
+			
+			.text {
+				display: none;
+			}
+		}
+	}
+	
+	#others {
+		
+		#other-info {
+			font-size: .9rem;
+		}
+		
+		#other-groups {
+			
+			display: block;
+			font-size: 1.3rem;
+			
+			&:hover {
+
+				span {
+					display: none !important;
+				}
+				
+				a {
+					display: block;
+				}
+			}
+			
+			.size-1 {
+				font-size: 1.1rem;
+			}
+			
+			a {
+				display: none;
+				font-size: 1.3rem;
+				line-height: 40px;
+				height: 40px;
+			}
+		}
+		
+	}
+}
+
+
+
+/* ================================================== */
+/* --- HOME PAGE --- */
+
+#banner-home
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#body-footer-home {
+	text-align: center;
+	
+	img {
+		max-width: 176px;
+		vertical-align: middle;
+	}
+	
+	span {
+		font-size: 5rem;
+		font-weight: 700;
+		padding: 0 25px;
+	}
+}
+
+/* ================================================== */
+
+
+
+
+
+/* ================================================== */
+/* CUSTOM LIST STYLE */
+
+@mixin custom-list( $image-width, $image-height, $h2-size )
+{		
+	li {
+		display: table; /* wraps whole element with floated elements inside */
+		width: 100%;
+		min-height: 200px;
+		margin-bottom: 50px;
+		
+		&:nth-child(odd)
+		{
+			.image {
+				float: left;
+			}
+			.description {
+				margin-left: $image-width;
+			}
+		}
+		
+		&:nth-child(even)
+		{
+			.image {
+				float: right;
+			}
+			.description {
+				margin-right: $image-width;
+			}
+		}
+		
+		img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		.image {
+			max-width: $image-width;
+			height: $image-height;
+		}
+		
+		.description 
+		{
+			padding: 0 25px;
+			
+			h2 {
+				text-align: center;
+				color: blue;
+				margin: 5px 0 30px 0;	
+				font-size: $h2-size;
+			}
+			
+			p {
+				text-align: justify;
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+/* GALLERY PAGE */
+.list-style-gallery
+{	
+	@include custom-list( 250px, 250px, 22px );
+}
+
+/* EVENTS PAGE */
+.list-style-events 
+{
+	@include custom-list( 500px, auto, 22px );
+}
+
+/* HISTORY PAGE */
+.list-style-history {
+	@include custom-list( 350px, auto, 22px );
+}
+
+.list-style-other-informations {
+	@include custom-list( 250px, auto, 22px );
+}
