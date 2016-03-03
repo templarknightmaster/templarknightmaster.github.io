@@ -6,6 +6,15 @@
 @import 'partials/nav';
 
 
+/* MIXINS */
+
+@mixin suffix( $font-size )
+{
+	vertical-align: top;
+	font-size: $font-size;
+}
+
+
 /* GENERAL */
 
 body {
@@ -18,14 +27,22 @@ ul {
 
 /* CUSTOM CLASS */
 
+.suffix-title {
+	@include suffix( 2.2rem );
+}
+
+.suffix-style-1 {
+	@include suffix( .8rem );
+}
+
+
+/* LAYOUT */
+
 .center-960 {
 	margin: 0 auto;
 	max-width: 960px;
 }
 
-.font-open-sans {
-	font-family: 'Open Sans', sans-serif;
-}
 
 /* SECTIONS */
 
@@ -137,6 +154,10 @@ ul {
 	
 	#others {
 		
+		#justforfun {
+			font-size: 1.5rem;
+		}
+		
 		#other-info {
 			font-size: .9rem;
 		}
@@ -199,9 +220,16 @@ ul {
 }
 
 /* ================================================== */
+/* PAGE CONTENT */
 
-
-
+#body-content-events {
+	> article {
+		> p {
+			font-size: 1.45rem;
+			font-weight: 700;
+		}
+	}
+}
 
 
 /* ================================================== */
@@ -270,8 +298,8 @@ ul {
 	@include custom-list( 250px, 250px, 22px );
 }
 
-/* EVENTS PAGE */
-.list-style-events 
+/* OUR HISTORY PAGE */
+.list-style-our-history
 {
 	@include custom-list( 500px, auto, 22px );
 }
@@ -281,6 +309,7 @@ ul {
 	@include custom-list( 350px, auto, 22px );
 }
 
+/* OTHER INFORMATIONS */
 .list-style-other-informations {
 	@include custom-list( 250px, auto, 22px );
 }
