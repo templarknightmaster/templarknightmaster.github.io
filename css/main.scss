@@ -35,6 +35,13 @@ ul {
 	@include suffix( .8rem );
 }
 
+.h2-style-1 {
+	text-align: center;
+	color: blue;
+	margin: 5px 0 30px 0;	
+	font-size: 22px;
+}
+
 
 /* LAYOUT */
 
@@ -74,6 +81,11 @@ ul {
 {
 	min-height: 500px;
 	padding: 15px 0;
+	
+	a {
+		color: red;
+		text-decoration: underline;
+	}
 	
 	.content {
 		
@@ -293,23 +305,51 @@ ul {
 }
 
 /* GALLERY PAGE */
-.list-style-gallery
+#list-style-gallery
 {	
 	@include custom-list( 250px, 250px, 22px );
 }
 
 /* OUR HISTORY PAGE */
-.list-style-our-history
+#list-style-our-history
 {
 	@include custom-list( 500px, auto, 22px );
+	li {
+		.description {
+			p {
+				margin-top: 150px !important;
+			}
+		}
+	}
 }
 
 /* HISTORY PAGE */
-.list-style-history {
+#list-style-history {
 	@include custom-list( 350px, auto, 22px );
 }
 
 /* OTHER INFORMATIONS */
-.list-style-other-informations {
+#list-style-other-informations {
 	@include custom-list( 250px, auto, 22px );
+}
+
+/* EVENTS */
+#list-style-events {
+	
+	margin-top: 50px;
+	
+	li {
+		display: inline-block;
+		padding: 1%;
+		vertical-align: top;
+		max-width: 30%;
+		
+		.image {
+
+			img {
+				width: 100%;
+				height: 250px;
+			}
+		}
+	}
 }
