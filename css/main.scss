@@ -25,6 +25,11 @@ ul {
 	list-style: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 /* CUSTOM CLASS */
 
 .suffix-title {
@@ -247,7 +252,7 @@ ul {
 /* ================================================== */
 /* CUSTOM LIST STYLE */
 
-@mixin custom-list( $image-width, $image-height, $h2-size )
+@mixin custom-list( $image-width: initial, $image-height: auto, $h2-size: initial )
 {		
 	li {
 		display: table; /* wraps whole element with floated elements inside */
@@ -273,11 +278,6 @@ ul {
 			.description {
 				margin-right: $image-width;
 			}
-		}
-		
-		img {
-			width: 100%;
-			height: 100%;
 		}
 		
 		.image {
@@ -311,7 +311,27 @@ ul {
 }
 
 /* OUR HISTORY PAGE */
-#list-style-our-history
+#list-style-our-history-01
+{
+	text-align: center;
+	
+	li {
+		display: inline-block;
+		vertical-align: top;
+		padding: 24px 12px;
+		
+		.image {
+			
+			img {
+				width: auto;
+				height: 370px;
+			}
+		}
+	}
+}
+
+
+#list-style-our-history-02
 {
 	@include custom-list( 500px, auto, 22px );
 	li {
@@ -333,7 +353,7 @@ ul {
 	@include custom-list( 250px, auto, 22px );
 }
 
-/* EVENTS */
+/* EVENTS PAGE */
 #list-style-events {
 	
 	margin-top: 50px;
@@ -350,6 +370,51 @@ ul {
 				width: 100%;
 				height: 250px;
 			}
+		}
+	}
+}
+
+/* JUST FOR FUN PAGE */
+#list-style-just-for-fun {
+	li {
+		display: inline-block;
+		
+		.description {
+			margin-top: 20px;
+			
+			p {
+				padding: 0;
+			}
+		}
+	}
+}
+
+/* MEMBERSHIP PAGE */
+#list-style-membership {
+	margin-top: 50px;
+	text-align: center;
+	
+	li {
+		display: block;
+		
+		> div {
+			display: inline-block;
+			padding: 0 50px;
+		}
+		
+		img {
+			height: 300px;
+		}
+		
+		.image {
+			img {
+				padding: 0 40px;
+			}
+		}
+		
+		.coat-of-arms {
+			width: 300px;
+			box-sizing: content-box;
 		}
 	}
 }
