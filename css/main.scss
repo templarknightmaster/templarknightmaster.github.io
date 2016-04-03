@@ -244,6 +244,7 @@ img {
 		> p {
 			font-size: 1.45rem;
 			font-weight: 700;
+			line-height: 1.4;
 		}
 	}
 }
@@ -319,6 +320,10 @@ img {
 		display: inline-block;
 		vertical-align: top;
 		padding: 24px 12px;
+		
+		p {
+			font-size: 1.5rem;
+		}
 		
 		.image {
 			
