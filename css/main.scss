@@ -403,25 +403,19 @@ img {
 	
 	li {
 		display: block;
+		height: 300px;
 		
 		> div {
 			display: inline-block;
 			padding: 0 50px;
 			width: 40%;
 		}
-		
-		img {
-			height: 300px;
-		}
-		
+
 		.image {
 			img {
 				padding: 0 40px;
 			}
 		}
 		
-		.coat-of-arms {
-			
-		}
 	}
 }
