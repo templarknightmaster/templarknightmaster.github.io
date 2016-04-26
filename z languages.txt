@@ -1,0 +1,12 @@
+<h2 class="language-english languages show">  </h2>
+<h2 class="language-danish languages hide">  </h2>
+<h2 class="language-filipino languages hide">  </h2>
+<h2 class="language-française languages hide">  </h2>
+<h2 class="language-german languages hide">  </h2>
+
+
+<p class="language-english languages show"></p>			
+<p class="language-danish languages hide"></p>			
+<p class="language-filipino languages hide"></p>			
+<p class="language-française languages hide"></p>
+<p class="language-german languages hide"></p>

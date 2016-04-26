@@ -382,8 +382,10 @@ img {
 /* JUST FOR FUN PAGE */
 #list-style-just-for-fun {
 	li {
+		vertical-align: top;
 		display: inline-block;
-		
+		max-width: 33%;
+
 		.description {
 			margin-top: 20px;
 			
@@ -405,6 +407,7 @@ img {
 		> div {
 			display: inline-block;
 			padding: 0 50px;
+			width: 40%;
 		}
 		
 		img {
@@ -418,8 +421,7 @@ img {
 		}
 		
 		.coat-of-arms {
-			width: 300px;
-			box-sizing: content-box;
+			
 		}
 	}
 }
