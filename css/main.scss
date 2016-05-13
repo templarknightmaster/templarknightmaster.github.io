@@ -26,7 +26,7 @@ ul {
 }
 
 img {
-	max-width: 100%;
+	max-width: 95%;
 	height: auto;
 }
 
@@ -179,6 +179,10 @@ img {
 			font-size: .9rem;
 		}
 		
+		#books {
+			font-size: 1rem;
+		}
+		
 		#other-groups {
 			
 			display: block;
@@ -288,8 +292,14 @@ img {
 		}
 		
 		.image {
-			max-width: $image-width;
+			width: $image-width;
 			height: $image-height;
+			text-align: center;
+			
+			img {
+				display: inline-block;
+				height: inherit;
+			}
 		}
 		
 		.description 
@@ -361,7 +371,7 @@ img {
 
 /* OTHER INFORMATIONS */
 #list-style-other-informations {
-	@include custom-list( 250px, auto, 22px );
+	@include custom-list( 250px, 175px, 22px );
 }
 
 /* EVENTS PAGE */
@@ -420,8 +430,20 @@ img {
 		.image {
 			img {
 				padding: 0 40px;
+				height: 300px;
 			}
 		}
 		
+	}
+}
+
+/* BOOKS TO READ */
+#list-style-books-to-read {
+	text-align: center;
+	
+	> li {
+		display: inline-block;
+		width: 30%;
+		padding: 1%;
 	}
 }
