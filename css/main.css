@@ -230,6 +230,15 @@ img {
   max-width: 95%;
   height: auto; }
 
+h1 {
+  font-family: "MediciText";
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  color: red;
+  margin-bottom: 50px; }
+
 /* CUSTOM CLASS */
 .suffix-title {
   vertical-align: top;
@@ -253,14 +262,6 @@ img {
 /* SECTIONS */
 .header {
   margin-bottom: 15px; }
-  .header > h1 {
-    font-family: "MediciText";
-    font-weight: 400;
-    font-size: 60px;
-    text-align: center;
-    text-transform: capitalize;
-    color: red;
-    margin-bottom: 50px; }
   .header > h2 {
     font-size: 35px;
     text-align: center;
@@ -299,26 +300,33 @@ img {
   #sidebar li {
     display: block;
     color: red;
-    height: 65px;
+    height: 60px;
     line-height: 60px; }
   #sidebar a {
     color: red;
     font-size: 2rem; }
+  #sidebar #seal {
+    margin-top: 90px; }
+    #sidebar #seal img {
+      max-width: 100px; }
   #sidebar #languages a:hover .image {
     display: none; }
   #sidebar #languages a:hover .text {
     display: block; }
   #sidebar #languages a .text {
     display: none; }
+  #sidebar #others li {
+    height: 30px;
+    line-height: 30px; }
   #sidebar #others #justforfun {
-    font-size: 1.5rem; }
+    font-size: 1rem; }
   #sidebar #others #other-info {
     font-size: .9rem; }
   #sidebar #others #books {
     font-size: 1rem; }
   #sidebar #others #other-groups {
     display: block;
-    font-size: 1.3rem; }
+    font-size: 1rem; }
     #sidebar #others #other-groups:hover span {
       display: none !important; }
     #sidebar #others #other-groups:hover a {
@@ -327,11 +335,9 @@ img {
       font-size: 1.1rem; }
     #sidebar #others #other-groups a {
       display: none;
-      font-size: 1.3rem;
-      line-height: 40px;
-      height: 40px; }
-  #sidebar #others #seal img {
-    max-width: 70%; }
+      font-size: 1rem;
+      line-height: 30px;
+      height: 30px; }
 
 /* ================================================== */
 /* --- HOME PAGE --- */
@@ -390,6 +396,16 @@ img {
     #list-style-gallery li .description p {
       text-align: justify;
       line-height: 1.5; }
+
+#scabbard {
+  text-align: center;
+  margin-top: 40px; }
+  #scabbard span {
+    font-size: 2rem;
+    margin: 0 40px; }
+  #scabbard img {
+    vertical-align: middle;
+    height: 300px; }
 
 /* OUR HISTORY PAGE */
 #list-style-our-history-01 {
@@ -548,5 +564,19 @@ img {
     display: inline-block;
     width: 30%;
     padding: 1%; }
+
+/* FIRST CRUSADE */
+#body-content-first-crusade article {
+  text-align: center; }
+  #body-content-first-crusade article img {
+    padding: 10px; }
+  #body-content-first-crusade article > div {
+    margin-top: 50px; }
+    #body-content-first-crusade article > div .text {
+      display: inline-block;
+      width: calc( 100% - 300px ); }
+    #body-content-first-crusade article > div .image {
+      float: right;
+      max-width: 300px; }
 
 /*# sourceMappingURL=main.css.map */

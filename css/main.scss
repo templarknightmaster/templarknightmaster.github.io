@@ -30,6 +30,18 @@ img {
 	height: auto;
 }
 
+h1 {
+	font-family: "MediciText";
+	font-weight: 400;
+	font-size: 60px;
+	
+	text-align: center;
+	text-transform: capitalize;
+	
+	color: red;
+	margin-bottom: 50px;
+}
+
 /* CUSTOM CLASS */
 
 .suffix-title {
@@ -48,6 +60,8 @@ img {
 }
 
 
+
+
 /* LAYOUT */
 
 .center-960 {
@@ -61,18 +75,6 @@ img {
 .header
 {
 	margin-bottom: 15px;
-	
-	> h1 {
-		font-family: "MediciText";
-		font-weight: 400;
-		font-size: 60px;
-		
-		text-align: center;
-		text-transform: capitalize;
-		
-		color: red;
-		margin-bottom: 50px;
-	}
 	
 	> h2 {
 		font-size: 35px;
@@ -139,13 +141,21 @@ img {
 	li {
 		display: block;
 		color: red;
-		height: 65px;
+		height: 60px;
 		line-height: 60px;
 	}
 	
 	a {
 		color: red;
 		font-size: 2rem;
+	}
+	
+	#seal {
+		margin-top: 90px;
+		
+		img {
+			max-width: 100px;
+		}
 	}
 	
 	#languages 
@@ -171,8 +181,13 @@ img {
 	
 	#others {
 		
+		li {
+			height: 30px;
+			line-height: 30px;
+		}
+		
 		#justforfun {
-			font-size: 1.5rem;
+			font-size: 1rem;
 		}
 		
 		#other-info {
@@ -186,7 +201,7 @@ img {
 		#other-groups {
 			
 			display: block;
-			font-size: 1.3rem;
+			font-size: 1rem;
 			
 			&:hover {
 
@@ -205,15 +220,9 @@ img {
 			
 			a {
 				display: none;
-				font-size: 1.3rem;
-				line-height: 40px;
-				height: 40px;
-			}
-		}
-		
-		#seal {
-			img {
-				max-width: 70%;
+				font-size: 1rem;
+				line-height: 30px;
+				height: 30px;
 			}
 		}
 		
@@ -325,6 +334,21 @@ img {
 #list-style-gallery
 {	
 	@include custom-list( 250px, 250px, 22px );
+}
+
+#scabbard {
+	text-align: center;
+	margin-top: 40px;
+	
+	span {
+		font-size: 2rem;
+		margin: 0 40px;
+	}
+	
+	img {
+		vertical-align: middle;
+		height: 300px;
+	}
 }
 
 /* OUR HISTORY PAGE */
@@ -445,5 +469,30 @@ img {
 		display: inline-block;
 		width: 30%;
 		padding: 1%;
+	}
+}
+
+/* FIRST CRUSADE */
+#body-content-first-crusade {
+	article {
+		text-align: center;
+		
+		img {
+			padding: 10px;
+		}
+		
+		> div {
+			margin-top: 50px;
+			
+			.text {
+				display: inline-block;
+				width: calc( 100% - 300px );
+			}
+			
+			.image {
+				float: right;
+				max-width: 300px;
+			}
+		}
 	}
 }
