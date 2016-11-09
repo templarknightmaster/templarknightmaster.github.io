@@ -295,7 +295,7 @@ h1 {
 			.image {
 				float: left;
 			}
-			.description {
+			.description:not(.full-width) {
 				margin-left: $image-width;
 			}
 		}
@@ -305,7 +305,7 @@ h1 {
 			.image {
 				float: right;
 			}
-			.description {
+			.description:not(.full-width) {
 				margin-right: $image-width;
 			}
 		}
