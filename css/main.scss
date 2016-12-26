@@ -64,8 +64,30 @@ h1 {
 	font-size: 2rem;
 }
 
+.h2-style-3 {
+	@extend .h2-style-1;
+	font-size: 26px;
+}
 
+.h2-style-4 {
+	@extend .h2-style-1;
+	font-size: 20px;
+}
 
+.image-50 {
+	width: 48% !important;
+	display: inline-block !important;
+	margin: 32px 0;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
+p {
+	margin-bottom: 16px;
+	line-height: 1.6;
+}
 
 /* LAYOUT */
 
@@ -485,6 +507,7 @@ h1 {
 			display: inline-block;
 			padding: 0 50px;
 			width: 45%;
+			vertical-align: middle;
 		}
 
 		.image {
